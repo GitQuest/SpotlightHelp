@@ -1,20 +1,30 @@
+BUILD_RTM_DEFAULT=false
+BUILD_CONFIG_DEFAULT='Release'
+JRE_VERSION_DEFAULT='1.8.0_102'
+
 properties([[$class: 'ParametersDefinitionProperty',
     parameterDefinitions: [
         [$class: 'BooleanParameterDefinition',
-         defaultValue: false,
+         defaultValue: BUILD_RTM_DEFAULT,
          description: 'If checked, downgrading will be disabled',
          name: 'BUILD_RTM'
         ],
         [$class: 'ChoiceParameterDefinition',
-         choices: 'Release\nDebug',
+         choices: "${BUILD_CONFIG_DEFAULT}\nDebug",
          description: 'The Visual Studio build solution configuration to use',
          name: 'BUILD_CONFIG'
+        ],
+        [$class: 'StringParameterDefinition',
+         defaultValue: JRE_VERSION_DEFAULT,
+         description: 'The JRE version to be distributed',
+         name: 'JRE_VERSION'
         ]
     ]
 ]])
 
-RTMBuild = "${binding.hasVariable('BUILD_RTM') ? BUILD_RTM : 'false'}"
-VSBuildConfiguration = "${binding.hasVariable('BUILD_CONFIG') ? BUILD_CONFIG : 'Release'}"
+RTMBuild = "${binding.hasVariable('BUILD_RTM') ? BUILD_RTM : BUILD_RTM_DEFAULT}"
+VSBuildConfiguration = "${binding.hasVariable('BUILD_CONFIG') ? BUILD_CONFIG : BUILD_CONFIG_DEFAULT}"
+JREVersion = "${binding.hasVariable('JRE_VERSION') ? JRE_VERSION : JRE_VERSION_DEFAULT}"
 
 timestamps
 {
@@ -29,6 +39,7 @@ timestamps
 
         echo "Is RTM build?: ${RTMBuild}"
         echo "Visual Studio build configuration: ${VSBuildConfiguration}"
+        echo "Distributing JRE version ${JREVersion}"
 
         stage 'Checkout Help'
         dir("${CurrentDir}/OnlineHelp")
@@ -50,7 +61,7 @@ timestamps
         stage 'Checkout Client'
         dir("${CurrentDir}/Spotlight")
         {
-            CLIENTBRANCH = checkoutBranchWithParent('Spotlight', PARENTBRANCH);
+            CLIENTBRANCH = checkoutBranchWithParent('Spotlight', PARENTBRANCH)
         }
 
         dir("${CurrentDir}/DiagnosticServer")
@@ -111,30 +122,32 @@ void nodeWithProperWorkspace(def slave, def space, def body) {
     }
 }
 
+def checkoutBranch(def repo, def branch)
+{
+    checkout([$class: 'GitSCM',
+              branches: [[name: "origin/${branch}"]],
+              doGenerateSubmoduleConfigurations: false,
+              submoduleCfg: [],
+              userRemoteConfigs: [[url: "git@github.com:GitQuest/${repo}.git",
+                                   credentialsId: '183428da-830f-4cc3-a535-6979620b1d52']],
+              extensions: [[$class: 'PruneStaleBranch'], [$class: 'CleanBeforeCheckout']]
+             ]
+    )
+}
+
 def checkoutBranchWithParent(def repo, def parent)
 {
+    // [name: "origin/${parent}"] TODO: fix alternative build plugin
+    // using https://issues.jenkins-ci.org/browse/JENKINS-37136 for tracking
     try
     {
-        checkout([$class: 'GitSCM',
-                  branches: [[name: "origin/${env.BRANCH_NAME}"]], // [name: "origin/${PARENTBRANCH}"] TODO: fix alternative build plugin
-                                                                   // using https://issues.jenkins-ci.org/browse/JENKINS-37136 for tracking
-                  doGenerateSubmoduleConfigurations: false,
-                  submoduleCfg: [],
-                  userRemoteConfigs: [[url: "git@github.com:GitQuest/${repo}.git",
-                                       credentialsId: '183428da-830f-4cc3-a535-6979620b1d52']],
-                  extensions: [[$class: 'PruneStaleBranch'], [$class: 'CleanBeforeCheckout']]])
+        checkoutBranch(repo, env.BRANCH_NAME)
         return env.BRANCH_NAME
     }
     catch(all)
     {
         echo "Defaulting to parentbranch $parent as branch ${env.BRANCH_NAME} is not available"
-        checkout([$class: 'GitSCM',
-                  branches: [[name: "origin/${parent}"]],
-                  doGenerateSubmoduleConfigurations: false,
-                  submoduleCfg: [],
-                  userRemoteConfigs: [[url: "git@github.com:GitQuest/${repo}.git",
-                                       credentialsId: '183428da-830f-4cc3-a535-6979620b1d52']],
-                  extensions: [[$class: 'CleanBeforeCheckout']]])
+        checkoutBranch(repo, parent)
         return parent
     }
 }
