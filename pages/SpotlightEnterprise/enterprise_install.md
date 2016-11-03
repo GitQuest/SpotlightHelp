@@ -24,6 +24,10 @@ If multiple users of a system install Spotlight for use, the additional users mu
 
 A minimal Spotlight Enterprise deployment consists of a Spotlight Diagnostic Server (to collect Spotlight data), a Spotlight Client (to view Spotlight data) and a Playback Database (to store recent history). These components are installed by the Spotlight Enterprise installer.
 
+### System requirements
+
+We only support installation on 64-bit systems, from Windows 7/2008 onwards.
+
 ### Welcome and select the type of install
 
 Select **Compact** to install the Spotlight Client and Spotlight Diagnostic Server on the current computer.
@@ -41,14 +45,6 @@ Scenarios that may be involved with a typical install include:
 
 The Spotlight Client will be installed as follows, unless you indicate otherwise
 
-#### Install location 32 bit system
-
-```
-C:\Program Files\Dell\Spotlight on SQL Server
-```
-
-#### Install location 64 bit system
-
 ```
 C:\Program Files (x86)\Dell\Spotlight on SQL Server
 ```
@@ -59,7 +55,7 @@ Do not install the Spotlight Client in the same location as an existing (but dif
 
 #### Install location
 
-Default installation folder for the Diagnostic Server (32bit and 64bit systems):
+Default installation folder for the Diagnostic Server:
 
 ```
 C:\Program Files\Dell\Diagnostic Server
