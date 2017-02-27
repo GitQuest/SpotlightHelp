@@ -31,25 +31,17 @@ If you change the report criteria (time frame or Connection Name) you must click
 
 
 ## Can I customize the reports to my own criteria?
-The Spotlight Report Viewer displays reports using SQL Server 2005 or 2008 Report Definition Language files (.rdl). You can build on the supplied reports or create your own reports. See [Query the Spotlight Statistics Repository][enterprise_ssrquery].
+The Spotlight Report Viewer displays reports using SQL Server 2005 or 2008 Report Definition Language files (.rdl). The supplied reports will be shown below the node "Default Reports" and the customized reports will be shown below the "Custom Reports".
 
-## Where is the data? Can I customize the collection schedules?
+### Customize supplied reports
+Copy the definition (rdl) files in the Spotlight Client installation folder in the Plug-ins\Trending\Reports to \<user\>\Documents\Spotlight Reports and rename the copied rerpots, then you can use Microsoft Visual Studio 2008 to customize the Reports.
+### Create new reports
+use Microsoft Visual Studio 2008 to create your onw reports, you can refer to  [Query the Spotlight Statistics Repository][enterprise_ssrquery],to retrie data from Spotlight Statistics Repository database tables directly or via supplied stored procedures.
+
+## Where is the data? Can I customize the collection schedules? (Move the section to Spotlight Reports)
 Data is collected from the SQL Server instance then written to the Spotlight Statistics Repository.
 
 You can customize the collection schedules in the Spotlight Client. See [Configure Scheduling][enterprise_cfgmonitor_scheduling].
-
-## Where are the report definition files?
-The default location for the definition (rdl) files is in the Spotlight Client installation folder in the Plug-ins\Trending\SSRS folder.
-
-If you do not have write access to the Program Files folders listed above, you can create the following folder and use it as an alternative: \<user\>\Documents\Spotlight Reports
-
-To set the location of your .rdl files in Spotlight:
-
-1. Select **Reports**.
-2. Right-click **Reports**.
-3. Select **Settings**.
-4. Navigate to the folder containing the rdl files you want to use.
-5. Click **OK**.
 
 
 {% include links.html %}
