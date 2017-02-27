@@ -34,7 +34,7 @@ If you change the report criteria (time frame or Connection Name) you must click
 The Spotlight Report Viewer displays reports using SQL Server 2005 or 2008 Report Definition Language files (.rdl). The supplied reports will be shown below the node "Default Reports" and the customized reports will be shown below the "Custom Reports".
 
 ### Customize supplied reports
-Copy the definition (rdl) files in the Spotlight Client installation folder in the Plug-ins\Trending\Reports to \<user\>\Documents\Spotlight Reports and rename the copied rerpots, then you can use Microsoft Visual Studio 2008 to customize the Reports.
+Copy the definition (rdl) files in the Spotlight Client installation folder in the Plug-ins\Trending\Reports to \<user\>\Documents\Spotlight Reports and rename the copied reports, then you can use Business Intelligence Development Studio to customize the Reports.
 ### Create new reports
 use Business Intelligence Development Studio to create your onw reports, you can refer to  [Query the Spotlight Statistics Repository][enterprise_ssrquery],to retrie data from Spotlight Statistics Repository database tables directly or via supplied stored procedures.
 
