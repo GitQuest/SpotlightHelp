@@ -36,7 +36,7 @@ The Spotlight Report Viewer displays reports using SQL Server 2005 or 2008 Repor
 ### Customize supplied reports
 Copy the definition (rdl) files in the Spotlight Client installation folder in the Plug-ins\Trending\Reports to \<user\>\Documents\Spotlight Reports and rename the copied rerpots, then you can use Microsoft Visual Studio 2008 to customize the Reports.
 ### Create new reports
-use Microsoft Visual Studio 2008 to create your onw reports, you can refer to  [Query the Spotlight Statistics Repository][enterprise_ssrquery],to retrie data from Spotlight Statistics Repository database tables directly or via supplied stored procedures.
+use Business Intelligence Development Studio to create your onw reports, you can refer to  [Query the Spotlight Statistics Repository][enterprise_ssrquery],to retrie data from Spotlight Statistics Repository database tables directly or via supplied stored procedures.
 
 ## Where is the data? Can I customize the collection schedules? (Move the section to Spotlight Reports)
 Data is collected from the SQL Server instance then written to the Spotlight Statistics Repository.
