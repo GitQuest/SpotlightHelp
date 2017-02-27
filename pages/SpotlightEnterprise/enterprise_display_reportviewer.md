@@ -38,10 +38,4 @@ Copy the definition (rdl) files in the Spotlight Client installation folder in t
 ### Create new reports
 use Business Intelligence Development Studio to create your onw reports, you can refer to  [Query the Spotlight Statistics Repository][enterprise_ssrquery],to retrie data from Spotlight Statistics Repository database tables directly or via supplied stored procedures.
 
-## Where is the data? Can I customize the collection schedules? (Move the section to Spotlight Reports)
-Data is collected from the SQL Server instance then written to the Spotlight Statistics Repository.
-
-You can customize the collection schedules in the Spotlight Client. See [Configure Scheduling][enterprise_cfgmonitor_scheduling].
-
-
 {% include links.html %}
