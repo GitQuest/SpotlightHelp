@@ -18,4 +18,9 @@ Data for long term history for reporting and trending is stored in the Spotlight
 [The Spotlight Reports for SSRS][reports_for_ssrs]
 And also you can create your own reports or customize existing reports  [Query the Spotlight Statistics Repository][enterprise_ssrquery] 
 
+## Where is the data? Can I customize the collection schedules? 
+Data is collected from the SQL Server instance then written to the Spotlight Statistics Repository.
+
+You can customize the collection schedules in the Spotlight Client. See [Configure Scheduling][enterprise_cfgmonitor_scheduling].
+
 {% include links.html %}
