@@ -53,6 +53,10 @@ If multiple users of a system install Spotlight for use, the additional users mu
 
 During installation you will be prompted to supply details for the Spotlight Diagnostic Server (to collect Spotlight data), Spotlight Client (to view Spotlight data) and Playback Database (to store recent history).
 
+### System requirements
+
+We only support installation on 64-bit systems, from Windows 7/2008 onwards.
+
 ### Welcome and select the type of install
 
 Select **Compact** to install the Spotlight Client and Spotlight Diagnostic Server on the current computer.
