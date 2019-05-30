@@ -17,7 +17,7 @@ Issue | ID
 Corrected a problem where on monitoring Availability Group there were duplications in Replica and Databases. | DS-1779
 Corrected a problem where multiple duplicate alerts were sent after an alarm actions change. | DS-1712
 Corrected a problem where SQL Agent - Jobs Failed alerts were re-sent when alarm actions were created. | DS-1743
-
+Corrected a problem where SQLAgentJobList writing too much data to Spotlight Statistics Repository. | DS-1630
 
 
 {% include links.html %}
