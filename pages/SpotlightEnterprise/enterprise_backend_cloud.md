@@ -39,7 +39,7 @@ SQL Statements and Query Plans are the only potention PII data in Spotlight on S
 ### How are users authenticated on the Spotlight on SQL Server Enterprise?
 
 * Standards based authentication protocol OIDC.
-* Claim based secured and signed authentication token
+* Claim based secured and signed authentication token.
 
 ### Where can I find security and compliance information on the Windows Azure Platform?
 The best place to go is the [Windows Azure](https://azure.microsoft.com/en-us/overview/trusted-cloud/) site itself.
