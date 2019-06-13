@@ -52,10 +52,7 @@ You can use the following wildcards when specifying values to ignore.
 
 For example, type "Database*" in the value field to ignore a series of databases named "Database01" through to "Database99".
 
-Notes:
-
-* The exclusion list is not case sensitive. Therefore, both [a-z] and [A-Z] match any letters. For example, [a-z] and [A-Z] work equally.
-* “!” following “[“ is not treated as the special symbol that excludes following characters in the brackets, but treated as a single character “!”.
+{% include note.html content="The exclusion list is not case sensitive." %}
 
 {% include tip.html content="While an alarm is raised you can set Spotlight to ignore the alarm for the current value or connection using Spotlight Today, Alarms by Time, Alarm log or What's This." %}
 
