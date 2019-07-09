@@ -15,6 +15,7 @@ Spotlight can monitor the following operating systems:
 * Microsoft Windows 8 (32-bit and 64-bit)
 * Microsoft Windows 7 (32-bit and 64-bit)
 * Microsoft Windows Vista (32-bit and 64-bit)
+* Microsoft Windows Server 2019 (64-bit)
 * Microsoft Windows Server 2016 (64-bit)
 * Microsoft Windows Server 2012 R2 (64-bit)
 * Microsoft Windows Server 2012 (64-bit)
