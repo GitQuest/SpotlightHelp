@@ -14,6 +14,6 @@ readonly: true
 
 Issue | ID
 ------|---
-
+Corrected a problem where the "Services - SQL Agent Mail Status" alarm not work properly. | DS-1370
 
 {% include links.html %}
