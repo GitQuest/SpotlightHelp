@@ -22,6 +22,8 @@ Consider installing the Spotlight Diagnostic Server on a computer that is always
 
 Where there are a large number of connections to be monitored or those connections are geographically widespread it may be appropriate to deploy multiple Spotlight Diagnostic Server where many Spotlight Clients monitor many connections through many Spotlight Diagnostic Server.
 
+{% include tip.html content="Do not install multiple Spotlight Diagnostic Server on the same host. For example, customers of Spotlight Enterprise should not install the Spotlight Cloud Diagnostic Server and Spotlight Enterprise Diagnostic Sever on the same host." %}
+
 ### Playback Database
 
 The Playback Database can be installed on the same host as the Spotlight Diagnostic Server, dependent on the number of SQL Server instances to be monitored.
