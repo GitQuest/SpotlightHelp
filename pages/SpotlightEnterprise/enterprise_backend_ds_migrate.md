@@ -34,7 +34,7 @@ C:\Program Files\Quest Software\Diagnostic Server
 ```
 C:\Program Files\Quest Software\Diagnostic Server\Agent\Bin\
 ```
-2.  Run: **ImportSosse.BAT** **\“<path>\”** where path is backed up source server path from **Step 1: Backup Data Files**.
+2.  Run: **ImportSosse.BAT** **“\<path\>”** where path is backed up source server path from **Step 1: Backup Data Files**.
 3.  You should see the message at the end of process:
 
     {% include imageClient.html file="pane_backend_dsmigration.jpg" alt="Diagnostic Server Migration" %}
