@@ -51,7 +51,6 @@ C:\Program Files\Quest Software\Diagnostic Server\Agent\Bin\
 2. Verify that connections and custom configurations are migrated.
 3. Open different configuration windows: Alarms, Scheduling, and Alarm Actions windows to ensure templates and custom settings are preserved.
 
-{% include note.html content="You have to input all passwords and sign in again in Uploading to Spotlight Cloud for Spotlight Enterprise 13.1 and later version after migrating the Diagnostic Server. For example, input the password again of connections which are not using Windows Authentication, Playback database and Spotlight Statistics Repository." %}
 
 ## Step 5: (Federation environment only) Remove source server out of federation  
 
@@ -92,6 +91,16 @@ Update the Playback Database and Statistics Repository with the newly located Sp
     * set @FixBug = 0 if the Diagnostic Server port is 3843, otherwise, set to 1
 
 
+## Step 9: Prior to using Spotlight Cloud, sign in again and re-enter all passwords
+For Spotlight Enterprise 13.1 and later, using a Spotlight Client:
+
+1. Click **Configure \| Diagnostic Server \| Configure uploading to the Spotlight Cloud**. Sign in again with Quest account details. 
+
+2. Click **Configure \| Connections**. For each connection, if a password is entered, re-enter that password. This is not necessary for connections using Windows authentication.
+
+3. Click **Configure \| Diagnostic Server \| Playback Database**. If SQL Server authentication is used then re-enter the password to connect to the Playback Database.
+
+4. Click **Configure \| Diagnostic Server | \Spotlight Statistics Repository**. If SQL Server authentication is used then re-enter the password to connect to the  Spotlight Statistics Repository.
 
 ### Script run in Step 8 point 4
 
