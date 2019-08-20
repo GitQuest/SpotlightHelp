@@ -100,7 +100,7 @@ For Spotlight Enterprise 13.1 and later, using a Spotlight Client:
 
 3. Click **Configure \| Diagnostic Server \| Playback Database**. If SQL Server authentication is used then re-enter the password to connect to the Playback Database.
 
-4. Click **Configure \| Diagnostic Server | \Spotlight Statistics Repository**. If SQL Server authentication is used then re-enter the password to connect to the  Spotlight Statistics Repository.
+4. Click **Configure \| Diagnostic Server \| Spotlight Statistics Repository**. If SQL Server authentication is used then re-enter the password to connect to the  Spotlight Statistics Repository.
 
 ### Script run in Step 8 point 4
 
