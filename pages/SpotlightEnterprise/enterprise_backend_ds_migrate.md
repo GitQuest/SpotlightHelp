@@ -34,7 +34,7 @@ C:\Program Files\Quest Software\Diagnostic Server
 ```
 C:\Program Files\Quest Software\Diagnostic Server\Agent\Bin\
 ```
-2.  Run: **ImportSosse.BAT** **“<path>”** where path is backed up source server path from **Step 1: Backup Data Files**.
+2.  Run: **ImportSosse.BAT** **\“<path>\”** where path is backed up source server path from **Step 1: Backup Data Files**.
 3.  You should see the message at the end of process:
 
     {% include imageClient.html file="pane_backend_dsmigration.jpg" alt="Diagnostic Server Migration" %}
@@ -50,6 +50,7 @@ C:\Program Files\Quest Software\Diagnostic Server\Agent\Bin\
 1. Open the Spotlight client on the destination server.
 2. Verify that connections and custom configurations are migrated.
 3. Open different configuration windows: Alarms, Scheduling, and Alarm Actions windows to ensure templates and custom settings are preserved.
+
 {% include note.html content="You have to input all passwords and sign in again in Uploading to Spotlight Cloud for Spotlight Enterprise 13.1 and later version after migrating the Diagnostic Server. For example, input the password again of connections which are not using Windows Authentication, Playback database and Spotlight Statistics Repository." %}
 
 ## Step 5: (Federation environment only) Remove source server out of federation  
