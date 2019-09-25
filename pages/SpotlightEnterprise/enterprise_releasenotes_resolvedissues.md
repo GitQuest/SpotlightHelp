@@ -15,5 +15,6 @@ readonly: true
 Issue | ID
 ------|---
 Corrected a problem where the "Services - SQL Agent Mail Status" alarm does not work properly. | DS-1370
+Corrected a problem where the color not properly displayed in SQL Server Database Space Report.| SES-1149,SOSSE-8414
 
 {% include links.html %}
