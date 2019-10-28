@@ -1,5 +1,5 @@
 ---
-title: Windows Powershell / Command line access
+title: Windows Powershell / Planned Outage Command line access
 summary: "Schedule planned outages from Windows Powershell / the command line."
 sidebar: p_enterprise_sidebar
 permalink: enterprise_cfgmonitor_plannedoutage_commandline.html

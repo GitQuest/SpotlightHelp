@@ -55,7 +55,7 @@ Remove-Connection -Name connectionName -PassThru
 See also [Add a list of connections](#AddAListOfConnections).
 
 ```
-Add-Connection -Address address -Technology connectionType -Enabled -PassThru
+Add-Connection -Address address -Technology connectionType -Tag tag -Enabled -PassThru
 ```
 
 #### Supply User / Password details
@@ -63,7 +63,7 @@ Add-Connection -Address address -Technology connectionType -Enabled -PassThru
 See also [Add a list of connections](#AddAListOfConnections).
 
 ```
-Add-Connection -Credential $(get-credential) -Address address -Technology connectionType -Enabled -PassThru
+Add-Connection -Credential $(get-credential) -Address address -Technology connectionType -Tag tag -Enabled -PassThru
 ```
 
 
@@ -82,6 +82,11 @@ Get-Connection -Name connectionName | Set-Connection -Credential $(get-credentia
 Get-Connection -Name connectionName | Set-Connection -UseDSAuth
 ```
 
+#### Update Tag (using Diagnostic Server credentials)
+
+```
+Get-Connection -Name connectionName | Set-Connection -Tag tag
+```
 
 ### Disable monitoring a Spotlight connection
 
@@ -114,6 +119,10 @@ Supply the address of the Spotlight connection as per the form of the address en
 ### -Technology connectionType
 
 Supply the connection type in Internet MIME format. For example: os/windows, os/vmware. More free form forms are accepted such as windows, vmware, hyperv, sqlserver, sqlazure, analysisservices, replication and availabilitygroups.
+
+### -Tag tag
+
+Supply the tag of the connection, not case sensitive, input one of tags or all of the tags, no need input the # sign.
 
 ### -Credential $(get-credential)
 
@@ -151,7 +160,7 @@ Disable Spotlight monitoring on this connection.
 Add a list of connections where all connections are of the same technology / connection type. Separate each address with a comma. Supply one technology type.
 
 ```
-Add-Connection -Address address1,address2,address3 -Technology connectionType -Enabled -PassThru
+Add-Connection -Address address1,address2,address3 -Technology connectionType -Tag tag -Enabled -PassThru
 ```
 
 Add a list of connections where there are varying connection types. Separate each address with a comma. Provide a list of technology types where the first address corresponds to the first technology type, the second address corresponds to the second technology type etc.
