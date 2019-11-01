@@ -298,7 +298,7 @@ Parameter | Use
 ----------|----
 -DS | DS address, case insensitive.
 -User | User Name, Separate each user with a comma, fuzzy matching and case insensitive.
--Role | Role Name, Separate each Role with a comma, fuzzy matching and case insensitive..
+-Role | Role Name, Separate each Role with a comma, fuzzy matching and case insensitive.
 
 
 Get all users or specific user
@@ -323,7 +323,7 @@ Parameter | Use
 -User | User name, separate each user with a comma. The user name supports fuzzy matching and is case insensitive.
 -DisplayName | Connection display name, separate each display name with a comma, fuzzy matching and case insensitive.
 -Technology | Technology name, separate each technology name with a comma, case insensitive.
--Tag | Connection Tag name, separate each Tag with a comma. The matching allows fuzzy matching when one tag is supplied but is always full matching when multiple tags are supplied. The matching is always case insensitive.
+-Tag | Connection tag name, separate each tag with a comma. The matching allows fuzzy matching when one tag is supplied but is always full matching when multiple tags are supplied. The matching is always case insensitive.
 -Denied | Display only the denied connections for the user(s).
 
 
