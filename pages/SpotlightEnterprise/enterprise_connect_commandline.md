@@ -28,6 +28,7 @@ From Windows Powershell, enter command: **Import-DS | Add-DS -PassThru**.
 * Add a list of connections
 * Remove many connections
 * Alarm commands
+* Manage access to Spotlight connections
 
 ## Basic commands
 
@@ -283,6 +284,106 @@ $snoozeAlarmRequest.MonitoredEntityName = "sosseazuredb_sqlazure"
 $snoozeAlarmRequest.SnoozeUntilDate = Get-Date -Date "2019-5-31 12:00:00"
 $snoozeAlarmRequests = @($snoozeAlarmRequest)
 Update-SnoozeAlarms $snoozeAlarmRequests
+```
+
+## Manage access to Spotlight connections commands
+
+### Get-Users
+
+Fetch users from "Spotlight Diagnostic Administrators", "Spotlight Diagnostic Users" and "Spotlight Diagnostic Read-Only Users" groups.
+
+Command parameters
+
+Parameter | Use
+----------|----
+-DS | DS address, case insensitive.
+-User | User Name, Separate each user with a comma, fuzzy matching and case insensitive.
+-Role | Role Name, Separate each Role with a comma, fuzzy matching and case insensitive..
+
+
+Get all users or specific user
+
+```
+Get-Users
+```
+
+```
+Get-Users -DS f1-w10-tvm01.melquest.dev.mel.au.qsft -Role ADMIN -User user
+```
+
+### Get-Permission
+
+Get allowed or denied connections from DS(s), by default not show admin users.
+
+Command parameters
+
+Parameter | Use
+----------|----
+-DS | DS address, case insensitive.
+-User | User Name, Separate each user with a comma, fuzzy matching and case insensitive.
+-DisplayName | Connection display name, separate each display name with a comma, fuzzy matching and case insensitive.
+-Technology | Technology name, separate each technology name with a comma, case insensitive.
+-Tag | Connection Tag name, separate each Tag with a comma, when one tag it is fuzzy matching and when multiple tags it is full match, case insensitive.
+-Denied | Display only the denied connections for the user(s).
+
+
+```
+Get-Permission -DS dsserver1.contoso.com -User contoso\user1 -DisplayName sqlserver1 -Technology sqlserver -Tag prod
+```
+
+```
+Get-Permission -User contoso\user1,user2 -DisplayName sqlserver1,winserver1 -Tag prod,NewYork -Denied
+```
+
+### Grant-Permission
+
+Grant user access permission to connection(s).
+
+Command parameters
+
+Parameter | Use
+----------|----
+-DS | DS address, case-insensitive.
+-User | User Name, separate each user with a comma, fuzzy matching and case insensitive.
+-ConnectionName | Connection technology name, separate each name with a comma, case insensitive.
+
+
+Grant multiple connection permission to one user
+
+```
+Grant-Permission -User contoso\user1 -ConnectionName sqlserver1_replication,sqlserver1_sqlserver
+```
+
+Grant permission from Get-Permission command
+
+```
+Get-Permission -User contoso\user1,user2 -Denied -Techonlogy sqlserver | Grant-Permission
+```
+
+
+### Revoke-Permission
+
+Revoke the user access permission from connection(s).
+
+Command parameters
+
+Parameter | Use
+----------|----
+-DS | DS address, case insensitive.
+-User | User Name, separate each user with a comma, fuzzy matching and case insensitive.
+-ConnectionName | Connection technology name, separate each name with a comma, case insensitive.
+
+
+Revoke multiple connection permission to one user
+
+```
+Revoke-Permission -User contoso\user1 -ConnectionName winserver1,sqlserver1_sqlserver
+```
+
+Revoke permission from Get-Permission command
+
+```
+Get-Permission -User contoso\user1,user2 -ConnectionName winserver1,sqlserver1_sqlserver | Revoke-Permission
 ```
 
 {% include links.html %}
