@@ -313,17 +313,17 @@ Get-Users -DS f1-w10-tvm01.melquest.dev.mel.au.qsft -Role ADMIN -User user
 
 ### Get-Permission
 
-Get allowed or denied connections from DS(s), by default not show admin users.
+Get allowed or denied connections from DS(s). By default this command does not show admin users.
 
 Command parameters
 
 Parameter | Use
 ----------|----
 -DS | DS address, case insensitive.
--User | User Name, Separate each user with a comma, fuzzy matching and case insensitive.
+-User | User name, separate each user with a comma. The user name supports fuzzy matching and is case insensitive.
 -DisplayName | Connection display name, separate each display name with a comma, fuzzy matching and case insensitive.
 -Technology | Technology name, separate each technology name with a comma, case insensitive.
--Tag | Connection Tag name, separate each Tag with a comma, when one tag it is fuzzy matching and when multiple tags it is full match, case insensitive.
+-Tag | Connection Tag name, separate each Tag with a comma. The matching allows fuzzy matching when one tag is supplied but is always full matching when multiple tags are supplied. The matching is always case insensitive.
 -Denied | Display only the denied connections for the user(s).
 
 
@@ -345,19 +345,19 @@ Parameter | Use
 ----------|----
 -DS | DS address, case-insensitive.
 -User | User Name, separate each user with a comma, fuzzy matching and case insensitive.
--ConnectionName | Connection technology name, separate each name with a comma, case insensitive.
+-ConnectionName | The connection name will take the form of the address followed by the connection type, as in address_connectionType, separate each name with a comma, case insensitive.
 
 
-Grant multiple connection permission to one user
+Grant multiple connection permissions to one user.
 
 ```
 Grant-Permission -User contoso\user1 -ConnectionName sqlserver1_replication,sqlserver1_sqlserver
 ```
 
-Grant permission from Get-Permission command
+Grant permission using the Get-Permission command in a pipeline.
 
 ```
-Get-Permission -User contoso\user1,user2 -Denied -Techonlogy sqlserver | Grant-Permission
+Get-Permission -User contoso\user1,user2 -Denied -Technology sqlserver | Grant-Permission
 ```
 
 
@@ -374,13 +374,13 @@ Parameter | Use
 -ConnectionName | Connection technology name, separate each name with a comma, case insensitive.
 
 
-Revoke multiple connection permission to one user
+Revoke multiple connection permissions for one user.
 
 ```
 Revoke-Permission -User contoso\user1 -ConnectionName winserver1,sqlserver1_sqlserver
 ```
 
-Revoke permission from Get-Permission command
+Revoke permission using the Get-Permission command in a pipeline.
 
 ```
 Get-Permission -User contoso\user1,user2 -ConnectionName winserver1,sqlserver1_sqlserver | Revoke-Permission
