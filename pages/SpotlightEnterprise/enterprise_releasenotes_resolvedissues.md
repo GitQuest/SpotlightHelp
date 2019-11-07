@@ -22,5 +22,6 @@ Corrected a problem where the large number of conditions in Spotlight Extended E
 Corrected a problem where the kill session feature in Sessions grid may not work properly if the order of the rows manually changed.| SOSSE-8488
 Corrected a problem where some links in the Windows connection properties >> Monitoring page was lost.| SOSSE-8524
 Corrected a problem where the SQL Server overview page sometimes shows no data after clicking on Rewind button.| SOSSE-8490
+Corrected a problem where the "Collection 'Full Text Catalog' failed" alarm was raised incorrectly.| SOSSE-8486
 
 {% include links.html %}
