@@ -23,5 +23,6 @@ Corrected a problem where the kill session feature in Sessions grid may not work
 Corrected a problem where some links in the Windows connection properties >> Monitoring page was lost.| SOSSE-8524
 Corrected a problem where the SQL Server overview page sometimes shows no data after clicking on Rewind button.| SOSSE-8490
 Corrected a problem where the "Collection 'Full Text Catalog' failed" alarm was raised incorrectly.| SOSSE-8486
+Corrected a problem where access Windows connection may pop up Access Violation error after setting manage access to Spotlight connections.| SOSSE-8487
 
 {% include links.html %}
