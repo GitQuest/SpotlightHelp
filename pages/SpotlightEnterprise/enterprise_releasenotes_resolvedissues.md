@@ -24,5 +24,6 @@ Corrected a problem where some links in the Windows connection properties >> Mon
 Corrected a problem where the SQL Server overview page sometimes shows no data after clicking on Rewind button.| SOSSE-8490
 Corrected a problem where the "Collection 'Full Text Catalog' failed" alarm was raised incorrectly.| SOSSE-8486
 Corrected a problem where access Windows connection may pop up Access Violation error after setting manage access to Spotlight connections.| SOSSE-8487
+Corrected a problem where the Spotlight Today page freeze after about 10 minutes sometime.| SOSSE-8476
 
 {% include links.html %}
