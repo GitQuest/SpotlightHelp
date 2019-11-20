@@ -44,4 +44,8 @@ SQL Statements and Query Plans are the only potention PII data in Spotlight on S
 ### Where can I find security and compliance information on the Windows Azure Platform?
 The best place to go is the [Windows Azure](https://azure.microsoft.com/en-us/overview/trusted-cloud/) site itself.
 
+### Upload to Cloud issue Knowledge Base
+INTERNAL - Spotlight Cloud error: "An existing connection was forcibly closed by the remote host"
+The solution can be found here [KB 248894](https://supportadmin.prod.quest.corp/KBViewer/get/1-4XZUA91)
+
 {% include links.html %}
