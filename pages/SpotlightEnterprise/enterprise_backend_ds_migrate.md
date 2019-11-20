@@ -14,17 +14,18 @@ These steps apply to federated and non federated environments. Steps for (federa
 ## Step 1: Backup Data Files
 
 1.  Use the Spotlight Client to verify and record the current Spotlight version. Use the Spotlight Client, About window to do this.
-2.  Locate the Spotlight Diagnostic Server installation folder. By default (in the server where the Diagnostic Server is installed):
+2.  Stop the Spotlight Diagnostic Server services.
+3.  Locate the Spotlight Diagnostic Server installation folder. By default (in the server where the Diagnostic Server is installed):
 ```
 C:\Program Files\Quest Software\Diagnostic Server
 ```
-3.  Copy of this folder to the server you are migrating the Diagnostic Server to. (or a shared drive that this server can access) You will need the path to this folder in **Step 3: Migrate Data**
+4.  Copy of this folder to the server you are migrating the Diagnostic Server to. (or a shared drive that this server can access) You will need the path to this folder in **Step 3: Migrate Data**
 
 
 
 ## Step 2: Install Spotlight on the new Diagnostic Server host
 
-1.  Install the same version of the Spotlight client and Diagnostic Server on the destination server as in source server
+1.  Install the same version of the Spotlight client and Diagnostic Server on the destination server as in source server. Use the same Playback database used in the source Diagnostic Server.
 2.  Open the Spotlight Client on the destination server and ensure it connects to the Diagnostic Server
 
 
