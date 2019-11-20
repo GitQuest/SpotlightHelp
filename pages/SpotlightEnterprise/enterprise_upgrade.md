@@ -99,7 +99,6 @@ The alarms that were factory set to require acknowledgment in Spotlight on SQL S
 
 *  Availability Group - Failed Over
 *  Clusters - Failed over
-*  Diagnostic Server - Auto Update Success
 *  Error Log - Error Count
 *  LiteSpeed Backup Failed
 *  LiteSpeed Backup Warning

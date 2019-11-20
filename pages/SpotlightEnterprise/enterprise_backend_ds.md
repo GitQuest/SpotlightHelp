@@ -38,7 +38,7 @@ A Spotlight Enterprise deployment consists of many components that may be spread
 
 ### Spotlight services requiring Internet access
 
-The Spotlight Diagnostic Server requires access to the Internet when enabling Auto Update or Spotlight Cloud services.
+The Spotlight Diagnostic Server requires access to the Internet when enabling Spotlight Cloud services.
 
 ### Account permissions
 
