@@ -14,7 +14,7 @@ These steps apply to federated and non federated environments. Steps for (federa
 ## Step 1: Backup Data Files
 
 1.  Use the Spotlight Client to verify and record the current Spotlight version. Use the Spotlight Client, About window to do this.
-2.  Stop the Spotlight Diagnostic Server services.
+2.  Stop the Spotlight Diagnostic Server service.
 3.  Locate the Spotlight Diagnostic Server installation folder. By default (in the server where the Diagnostic Server is installed):
 ```
 C:\Program Files\Quest Software\Diagnostic Server
