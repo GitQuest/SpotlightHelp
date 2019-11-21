@@ -708,25 +708,24 @@ entries:
           url: /enterprise_interface_scom_troubleshoot.html
           output: web, pdf
           
-      subfolders:
       - title: Windows Powershell / Command line access
         output: web
         subfolderitems:
 
         - title: Spotlight Connections
-          url: /enterprise_connect_commandline.html
+          url: /enterprise_commandline_connections.html
           output: web, pdf
 
         - title: Alarms
-          url: /enterprise_interface_scom_requirements.html
+          url: /enterprise_commandline_alarms.html
           output: web, pdf
 
         - title: User Level Access
-          url: /enterprise_interface_scom_cfg.html
+          url: /enterprise_commandline_userlevelaccess.html
           output: web, pdf
 
         - title: Schedule planned outages
-          url: /enterprise_cfgmonitor_plannedoutage_commandline.html
+          url: /enterprise_commandline_plannedoutage.html
           output: web, pdf
 
   - title: Backend deployment
