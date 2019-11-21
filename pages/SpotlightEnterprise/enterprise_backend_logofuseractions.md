@@ -90,7 +90,6 @@ The log does not record
 The log does record changes to the configuration of the Diagnostic Server:
 
 * Configure PagerDuty
-* Configure the auto-update facility
 * Configure the Diagnostic Server's mail server
 * Configure the Playback Database
 * Configure the SNMP Trap

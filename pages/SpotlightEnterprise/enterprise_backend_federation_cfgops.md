@@ -12,7 +12,7 @@ Any Spotlight Client in the federation can configure the operations of any Spotl
 
 1. Open the Spotlight Client.
 2. Click **Configure \| Diagnostic Server**.
-3. Select the Spotlight Diagnostic Server operation to configure (Auto Update - Use of Extended Events).
+3. Select the Spotlight Diagnostic Server operation to configure (Database maintenance schedule - Use of Extended Events).
 4. The dialog to configure the selected Spotlight Diagnostic Server operation opens. Select the Spotlight Diagnostic Server and set the new configuration.
 
 Any Spotlight Client in the federation can configure the operations of the federation.

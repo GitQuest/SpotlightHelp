@@ -23,7 +23,6 @@ To add a Spotlight Diagnostic Server to SCOM see [Configure the Spotlight Manage
 Select to show alarms raised against each Spotlight Diagnostic Server. For example, show:
 
 * Health check data upload alerts
-* Auto update of the Spotlight Diagnostic Server alerts
 * Mobile monitoring data transfer failure alerts
 * Failure to monitor the Spotlight connection
 * Failure to send email notifications of alarms raised

@@ -600,10 +600,6 @@ entries:
       url: /enterprise_cfgds_pagerduty.html
       output: web, pdf
 
-    - title: Configure the auto-update facility
-      url: /enterprise_cfgds_autoupdate.html
-      output: web, pdf
-
     - title: Manage access to Spotlight connections
       url: /enterprise_cfgds_manageaccess.html
       output: web, pdf

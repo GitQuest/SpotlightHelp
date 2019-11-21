@@ -127,7 +127,7 @@ Required to monitor an Analysis Services server, a SQL Server Replication enviro
 The SQL Server Management Tools are available from any SQL Server 2005, SQL Server 2008, SQL Server 2012, SQL Server 2014 or SQL Server 2016 edition except SQL Server Express and SQL Server Compact. The version required corresponds to the latest version of SQL Server that you are monitoring.
 
 #### Internet Access
-Required by Auto Update and Spotlight Cloud. Required to monitor your Spotlight connections from the Spotlight Cloud web site or a mobile device.
+Required by Spotlight Cloud. Required to monitor your Spotlight connections from the Spotlight Cloud web site or a mobile device.
 
 #### Connection Limit
 A single Spotlight Diagnostic Server is designed to monitor a maximum of 100 SQL Servers, Analysis Services or Replication instances and 100 Windows servers. Exceeding this recommended limit on 32 bit environments may result in poor performance or product instability, due to the 1 Gb memory limit. On 64 bit environments theoretically more connections can be monitored as the 1 Gb limit no longer applies, however testing of this has been limited. In environments that exceed this number of connections, consider a deployment of federation of Spotlight Diagnostic Server.
@@ -259,7 +259,6 @@ The alarms that were factory set to require acknowledgment in Spotlight 11.2 are
 
 * Availability Group - Failed Over
 * Clusters - Failed over
-* Diagnostic Server - Auto Update Success
 * Error Log - Error Count
 * LiteSpeed Backup Failed
 * LiteSpeed Backup Warning

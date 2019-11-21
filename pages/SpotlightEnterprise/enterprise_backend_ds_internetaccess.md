@@ -9,10 +9,6 @@ folder: SpotlightEnterprise
 
 ## The following Spotlight services require Internet access on the Spotlight Diagnostic Server.
 
-### Configure the auto-update facility
-
-[Enable Auto Update][enterprise_cfgds_autoupdate] so the Spotlight Diagnostic Server will receive minor updates (scripts and configuration) automatically.
-
 ### Configure uploading to Spotlight Cloud
 
 Monitor Spotlight connections in a web browser or Spotlight Cloud Mobile. Upload performance data for health check analysis. See [Upload to the Spotlight Cloud][enterprise_cfgds_spotlightcloud].
@@ -42,18 +38,6 @@ On the computer hosting the Spotlight Diagnostic Server:
 {% include imageClient.html file="pane_windows_internetproperties.png" alt="Internet Properties" %}
 
 {% include note.html content="After the Spotlight Diagnostic Server is installed, [restart the Spotlight Diagnostic Server][enterprise_backend_ds_startstop] after changes are made." %}
-
-
-## Internet URLs - Auto Update
-
-An outgoing HTTPS connection to the following URL is used to retrieve updates.
-
-```
-https://spotlight.blob.core.windows.net
-```
-
-Enabling of Auto-update does not open a port that allows incoming connections.
-
 
 
 ## Internet URLs - Spotlight Cloud

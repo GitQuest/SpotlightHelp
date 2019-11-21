@@ -108,12 +108,6 @@ Spotlight uses the Spotlight diagnostic user groups to authenticate the Spotligh
 
 Add more users to the Spotlight diagnostic user groups if required. Members of these groups can be Windows users or Windows domain groups. Aliases are not supported.
 
-#### Auto update Diagnostic Server
-
-When **Selected** the Spotlight Diagnostic Server will receive minor updates (scripts and configuration) automatically. Ensure the Spotlight Diagnostic Server can access the Internet.
-
-When **Not Selected** all updates to the Spotlight Diagnostic Server will require a new version and installation of Spotlight Enterprise.
-
 ### The Playback Database
 
 The Spotlight installer installs the Playback Database following installation of the Spotlight Diagnostic Server. Every Spotlight Diagnostic Server connects to its own Playback Database. The Spotlight installer will ask you to provide the following information when it installs the Playback Database.

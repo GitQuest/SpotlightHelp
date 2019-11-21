@@ -53,7 +53,6 @@ Icon | Action | Administrator | User | Read-only
 {% include inline_imageClient.html file="tb_config_dserver.png" alt="Configure Diagnostic Server" %} | Select a Diagnostic Server | Yes | Yes | Yes
 {% include inline_imageClient.html file="tb_config_dserver.png" alt="Configure Diagnostic Server" %} | Configure the database maintenance schedule | Yes | Yes | No
 {% include inline_imageClient.html file="tb_config_dserver.png" alt="Configure Diagnostic Server" %} | Configure PagerDuty | Yes | Yes | No
-{% include inline_imageClient.html file="tb_config_dserver.png" alt="Configure Diagnostic Server" %} | Configure the auto-update facility | Yes | Yes | No
 {% include inline_imageClient.html file="tb_config_dserver.png" alt="Configure Diagnostic Server" %} | Configure the Diagnostic Server's mail server | Yes | Yes | No
 {% include inline_imageClient.html file="tb_config_dserver.png" alt="Configure Diagnostic Server" %} | Configure the Playback Database | Yes | Yes | No
  | Configure Store SQL text and query plans in playback | Yes | No | No
