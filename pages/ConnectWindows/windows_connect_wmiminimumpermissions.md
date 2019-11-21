@@ -169,6 +169,7 @@ From the Windows command prompt, type **wmimgmt.msc** and click **Enter** to ope
     Click **OK** to save the new permissions.
 
 10. Click **OK** to close all dialogs.
+11. Add this user to be monitored Windows server *Power User* groups then restart this server Windows Management Instrumentation service. (Optional, it can fix the Open Sessions count and Session page no data issue.)
 
 
 {% include links.html %}
