@@ -417,10 +417,6 @@ entries:
           url: /enterprise_cfgmonitor_connect_discoverywizard.html
           output: web, pdf
 
-        - title: Windows Powershell / Command line access
-          url: /enterprise_connect_commandline.html
-          output: web, pdf
-
       - title: Configure Alarms
         output: web
         subfolderitems:
@@ -503,10 +499,6 @@ entries:
 
         - title: Planned Outage Details
           url: /enterprise_cfgmonitor_plannedoutage_details.html
-          output: web, pdf
-
-        - title: Windows Powershell / Command line access
-          url: /enterprise_cfgmonitor_plannedoutage_commandline.html
           output: web, pdf
 
     - title: Configure SQL Server Response Time
@@ -714,6 +706,27 @@ entries:
 
         - title: Troubleshooting
           url: /enterprise_interface_scom_troubleshoot.html
+          output: web, pdf
+          
+      subfolders:
+      - title: Windows Powershell / Command line access
+        output: web
+        subfolderitems:
+
+        - title: Spotlight Connections
+          url: /enterprise_connect_commandline.html
+          output: web, pdf
+
+        - title: Alarms
+          url: /enterprise_interface_scom_requirements.html
+          output: web, pdf
+
+        - title: User Level Access
+          url: /enterprise_interface_scom_cfg.html
+          output: web, pdf
+
+        - title: Schedule planned outages
+          url: /enterprise_cfgmonitor_plannedoutage_commandline.html
           output: web, pdf
 
   - title: Backend deployment
