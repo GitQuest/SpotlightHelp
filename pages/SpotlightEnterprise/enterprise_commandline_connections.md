@@ -113,13 +113,13 @@ It can be used via a temporary variable (preferable if you want to add many conn
 ```
 $c = $(get-credential)
 
-Add-Connection -Credential $c -Technology sqlserver -Address my.host.name\instance -Enable
+Add-Connection -Credential $c -Technology sqlserver -Address my.host.name\instance -Enabled
 ```
 
 It can be used inline as per:
 
 ```
-Add-Connection -Credential $(get-credential) -Technology sqlserver -Address my.host.name\instance -Enable
+Add-Connection -Credential $(get-credential) -Technology sqlserver -Address my.host.name\instance -Enabled
 ```
 
 ### -Enabled
