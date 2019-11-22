@@ -40,14 +40,6 @@ entries:
       url: /spotlightds_alarm_alarmevaluationfailure.html
       output: web, pdf
 
-    - title: Diagnostic Server - Auto Update Failure
-      url: /spotlightds_alarm_autoupdatefailure.html
-      output: web, pdf
-
-    - title: Diagnostic Server - Auto Update Success
-      url: /spotlightds_alarm_autoupdatesuccess.html
-      output: web, pdf
-
     - title: Diagnostic Server - Collection Execution Failure
       url: /spotlightds_alarm_collectionexecutionfailure.html
       output: web, pdf
