@@ -712,6 +712,10 @@ entries:
         output: web
         subfolderitems:
 
+        - title: Windows Powershell / Command line access
+          url: /enterprise_commandline_summary.html
+          output: web, pdf
+
         - title: Spotlight Connections
           url: /enterprise_commandline_connections.html
           output: web, pdf
