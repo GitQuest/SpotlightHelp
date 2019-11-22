@@ -30,6 +30,8 @@ topnav_dropdowns:
           url: /enterprise_interface_scom.html
         - title: PagerDuty
           url: /enterprise_interface_pagerduty.html
+        - title: Windows Powershell / Command line access
+          url: /enterprise_commandline_summary.html
     - title: Connection Types
       folderitems:
         - title: SQL Server

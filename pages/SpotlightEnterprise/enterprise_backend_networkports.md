@@ -37,12 +37,12 @@ This port is used by the Spotlight Cloud Diagnostic Server to communicate with t
 
 ### TCP 443
 
-This port is used by the Spotlight Cloud Diagnostic Server to communicate with Spotlight Cloud. This port must be open for outgoing connections on the Spotlight Cloud Diagnostic Server host when uploading to Spotlight Cloud is enabled on the Spotlight Cloud Diagnostic Server.
+This port is used by the Spotlight Cloud Diagnostic Server to communicate with Spotlight Cloud. This port must be open for outgoing connections on the Spotlight Cloud Diagnostic Server host.
 
 
 ### TCP 8930 and 7985
 
-This two ports are used on the Spotlight Cloud Diagnostic Server host for internal communications between the Spotlight Cloud Diagnostic Server service and the Spotlight Cloud Diagnostic Server App.
+These two ports are used on the Spotlight Cloud Diagnostic Server host for internal communications between the Spotlight Cloud Diagnostic Server service and the Spotlight Cloud Diagnostic Server App.
 
 
 ## Network ports on monitored Windows servers and hosts of database connections
