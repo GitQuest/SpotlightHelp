@@ -8,6 +8,6 @@ folder: SpotlightEnterprise
 readonly: true
 ---
 
-The auto update feature has been deprecated.
+The auto update feature has been removed.
 
 {% include links.html %}
