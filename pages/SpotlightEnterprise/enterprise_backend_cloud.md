@@ -23,15 +23,20 @@ For more information on Data handling and Security, see [Data handling and Secur
 
 ## Spotlight Enterprise Cloud Integration vs. Spotlight Cloud solution
 
-###Spotlight Enterprise Cloud Integration
+### Spotlight Enterprise Cloud Integration
 
 * On Spotlight Cloud, a small subset of monitoring features are available for Spotlight Enterprise user such as SQL Server Overview page monitoring, Alarms, Performance health, etc.
 * This particular integration is free for Spotlight Enterprise users.
 
-###Spotlight Cloud Solution
+### Spotlight Cloud Solution
 
 * Spotlight Cloud is a cloud-powered SQL Server Performance monitoring solution that provides 24*7 monitoring, instant diagnostics, and powerful tuning to ensure consistent performance and high availability.
 * To try the Spotlight Cloud solution, please following the Getting Started documentation on https://doc.spotlightcloud.io/getting-started/
 * Spotlight Cloud is a SaaS offering and the charge solution is subscription-based. At the end of the 30-day free trial, you need to pick from one of the two plans depending on your SQL Server performance monitoring needs. https://www.spotlightcloud.io/pricing
+
+## Troubleshooting Errors
+
+### Error on Spotlight Cloud feature: "An existing connection was forcibly closed by the remote host" (248834)
+The solution can be found here [KB 248834](https://supportadmin.prod.quest.corp/KBViewer/get/1-4XZU9R8)
 
 {% include links.html %}
