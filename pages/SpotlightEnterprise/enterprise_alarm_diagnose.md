@@ -47,6 +47,12 @@ Default Color | Severity
 
 Alternative colors for alarm severity are available. For more information, see [Severity colors for accessibility][enterprise_cfgclient_severitycolorsforaccessibility].
 
+## Configuration
+Many options are available from the Spotlight Client Configure ribbon. In particular:
+
+[Configure \| Alarms][enterprise_cfgmonitor_alarms] | Set the thresholds and severities that determine when an alarm is raised. Disable an alarm. Set an alarm to require acknowledgment. Configure keyed alarms. Collect additional diagnostic information on an alarm.
+[Configure \| Alarm Actions][enterprise_cfgmonitor_alarmactions] | Set actions for Spotlight to take when an alarm is raised. The actions Spotlight can take include running a program and sending an email. Conditions on taking the action can be defined, such as the day of the week, the time of day, the severity of the alarm, the alarm type and the connection type.
+
 ## About each alarm
 Information about each alarm is documented under the connection type.
 
@@ -61,12 +67,8 @@ Information about each alarm is documented under the connection type.
 {% endfor %}
 </ul>
 
-## Configuration
-Many options are available from the Spotlight Client Configure ribbon. In particular:
-
-[Configure \| Alarms][enterprise_cfgmonitor_alarms] | Set the thresholds and severities that determine when an alarm is raised. Disable an alarm. Set an alarm to require acknowledgment. Configure keyed alarms. Collect additional diagnostic information on an alarm.
-[Configure \| Alarm Actions][enterprise_cfgmonitor_alarmactions] | Set actions for Spotlight to take when an alarm is raised. The actions Spotlight can take include running a program and sending an email. Conditions on taking the action can be defined, such as the day of the week, the time of day, the severity of the alarm, the alarm type and the connection type.
-
+## Relationship between alarms and schedule
+See [Rules procedure intervals][RulesProcedureIntervals.html]
 
 
 
