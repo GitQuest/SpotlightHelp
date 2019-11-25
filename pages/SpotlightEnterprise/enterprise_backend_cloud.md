@@ -19,34 +19,19 @@ To retrieve the analysis of this data, use a web browser to sign in with your Qu
 
 ## Data handling and Security
 
-### What data are we uploading?
-Spotlight on SQL Server Enterprise user can opt-in to send system configuration and performance metrics from SQL Server to SpotlightCloud.io. Data is collected and then sent periodically. Once it is uploaded we store it for analysis and consumption by the end user. From the data and subsequent analysis SpotlightCloud.io is able to generate a picture of your system's health and performance. 
+For more information on Data handling and Security, see [Data handling and Security][cloud_legal_datahandlingsecurity].
 
-### How is customer data transferred from Spotlight on SQL Server Enterprise to Cloud Connect?
-When data is uploaded to cloud Connect it is sent via https to a cloud-based service running in Microsoft Azure. The low-level security protocols utilized during the data-transfer will depend on the client and the server.
+## Spotlight Enterprise Cloud Integration vs. Spotlight Cloud solution
 
-### Where is customer data stored?
-As of April 2018, all data is uploaded to Azure datacenters in North America. The datacenters utilized include: *North Central*, *South Central* and *East US2*.
+###Spotlight Enterprise Cloud Integration
 
-The best place to go is the [Windows Azure](https://azure.microsoft.com/en-us/overview/trusted-cloud/) site itself.
+* On Spotlight Cloud, a small subset of monitoring features are available for Spotlight Enterprise user such as SQL Server Overview page monitoring, Alarms, Performance health, etc.
+* This particular integration is free for Spotlight Enterprise users.
 
-### How long is customer data kept?
-Data uploaded to Cloud Connect is kept indefinitely. However, we make no promises about how long we'll keep customers' data. Quest may purge 'old data' in order to keep our financial costs under control.
+###Spotlight Cloud Solution
 
-### How does Quest obfuscate Personally Identifiable Information (PII)?
-SQL Statements and Query Plans are the only potention PII data in Spotlight on SQL Server Enterprise. They are not uploaded to Spotlight Cloud.
-
-### How are users authenticated on the Spotlight on SQL Server Enterprise?
-
-* Standards based authentication protocol OIDC.
-* Claim based secured and signed authentication token.
-
-### Where can I find security and compliance information on the Windows Azure Platform?
-The best place to go is the [Windows Azure](https://azure.microsoft.com/en-us/overview/trusted-cloud/) site itself.
-
-## Troubleshooting Errors
-
-### Error on Spotlight Cloud feature: "An existing connection was forcibly closed by the remote host" (248834)
-The solution can be found here [KB 248834](https://supportadmin.prod.quest.corp/KBViewer/get/1-4XZU9R8)
+* Spotlight Cloud is a cloud-powered SQL Server Performance monitoring solution that provides 24*7 monitoring, instant diagnostics, and powerful tuning to ensure consistent performance and high availability.
+* To try the Spotlight Cloud solution, please following the Getting Started documentation on https://doc.spotlightcloud.io/getting-started/
+* Spotlight Cloud is a SaaS offering and the charge solution is subscription-based. At the end of the 30-day free trial, you need to pick from one of the two plans depending on your SQL Server performance monitoring needs. https://www.spotlightcloud.io/pricing
 
 {% include links.html %}
