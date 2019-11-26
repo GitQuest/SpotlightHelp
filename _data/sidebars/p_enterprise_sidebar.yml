@@ -724,7 +724,7 @@ entries:
           url: /enterprise_commandline_alarms.html
           output: web, pdf
 
-        - title: User Level Access
+        - title: Manage Connection Access
           url: /enterprise_commandline_userlevelaccess.html
           output: web, pdf
 

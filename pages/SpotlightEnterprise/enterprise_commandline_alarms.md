@@ -1,6 +1,6 @@
 ---
 title: Windows Powershell / Alarms Command line 
-summary: "Get / Ackownledge / Snooze Alarms from Windows Powershell / the command line."
+summary: "Get / Acknowledge / Snooze Alarms from Windows Powershell / the command line."
 sidebar: p_enterprise_sidebar
 permalink: enterprise_commandline_alarms.html
 folder: SpotlightEnterprise
