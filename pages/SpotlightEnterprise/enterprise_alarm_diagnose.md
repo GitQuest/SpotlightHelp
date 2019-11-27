@@ -68,7 +68,7 @@ Information about each alarm is documented under the connection type.
 </ul>
 
 ## Relationship between alarms and schedule
-See [Rules procedure intervals][RulesProcedureIntervals.html]
+See [Rules procedure intervals](RulesProcedureIntervals.html)
 
 
 
