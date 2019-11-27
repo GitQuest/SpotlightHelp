@@ -19,7 +19,7 @@ To retrieve the analysis of this data, use a web browser to sign in with your Qu
 
 ## Data handling and Security
 
-For more information on Data handling and Security, see [Data handling and Security][cloud_legal_datahandlingsecurity].
+For more information on Data handling and Security, see [Data handling and Security](cloud_legal_datahandlingsecurity.html)
 
 ## Spotlight Enterprise Cloud Integration vs. Spotlight Cloud solution
 
