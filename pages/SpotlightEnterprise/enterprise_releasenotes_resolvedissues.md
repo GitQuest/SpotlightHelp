@@ -25,5 +25,6 @@ Corrected a problem where the SQL Server overview page sometimes shows no data a
 Corrected a problem where the "Collection 'Full Text Catalog' failed" alarm was raised incorrectly.| SOSSE-8486
 Corrected a problem where access Windows connection may pop up Access Violation error after setting manage access to Spotlight connections.| SOSSE-8487
 Corrected a problem where the Spotlight Today page freeze after about 10 minutes sometime.| SOSSE-8476
+Corrected a problem where the hyper-links in Alarm Action dialog may not work properly with some particular IE settings.| SEMB-39
 
 {% include links.html %}
