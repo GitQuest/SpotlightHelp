@@ -14,6 +14,8 @@ To resolve this alarm and continue to use Spotlight Cloud, upgrade Spotlight Ent
 
 Otherwise, to resolve this alarm, disable uploads to Spotlight Cloud. 
 
-See [Confiure uploading to the Spotlight Cloud][enterprise_cfgds_spotlightcloud].
+1. Open the Spotlight Client
+1. Click **Configure \| Diagnostic server**.
+3. De-select the option to **Upload data to Spotlight Cloud**
 
 {% include links.html %}
