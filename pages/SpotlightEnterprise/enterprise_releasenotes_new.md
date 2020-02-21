@@ -14,4 +14,7 @@ readonly: true
 You can now specify which Spotlight users are entitled to view which Spotlight connections from the command line. Click [Windows Powershell / Manage access to Spotlight connections Command line][enterprise_commandline_userlevelaccess] for more information.
 
 
+## Upload to Spotlight Cloud
+New Spotlight Cloud Future Incompatibility alarm and Spotlight Cloud Incompatibility alarm.
+
 {% include links.html %}
