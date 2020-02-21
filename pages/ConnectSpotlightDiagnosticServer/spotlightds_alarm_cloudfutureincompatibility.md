@@ -10,6 +10,8 @@ folder: ConnectSpotlightDS
 ---
 
 
-To continue to use Spotlight Cloud upgrade to the latest Spotlight Enterprise version before that date. Alternatively, Disable uploads to Spotlight Cloud.
+To resolve this alarm and continue to use Spotlight Cloud, upgrade Spotlight Enterprise to the latest version before the expiry date.
+
+Otherwise, to resolve this alarm, disable uploads to Spotlight Cloud. 
 
 {% include links.html %}
