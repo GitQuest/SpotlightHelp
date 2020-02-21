@@ -9,6 +9,9 @@ id: Cloudincompatibility.alarm
 folder: ConnectSpotlightDS
 ---
 
-To continue to use Spotlight Cloud upgrade to the latest Spotlight Enterprise version. Alternatively, Disable uploads to Spotlight Cloud.
+To resolve this alarm and use Spotlight Cloud, upgrade Spotlight Enterprise to the latest version.
+
+Otherwise, to resolve this alarm, disable uploads to Spotlight Cloud. 
+
 
 {% include links.html %}
