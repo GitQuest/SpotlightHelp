@@ -9,9 +9,11 @@ id: Cloudincompatibility.alarm
 folder: ConnectSpotlightDS
 ---
 
+
 To resolve this alarm and use Spotlight Cloud, upgrade Spotlight Enterprise to the latest version.
 
 Otherwise, to resolve this alarm, disable uploads to Spotlight Cloud. 
 
+See [Confiure uploading to the Spotlight Cloud][enterprise_cfgds_spotlightcloud].
 
 {% include links.html %}

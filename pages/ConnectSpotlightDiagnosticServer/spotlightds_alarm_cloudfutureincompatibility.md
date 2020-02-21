@@ -14,4 +14,6 @@ To resolve this alarm and continue to use Spotlight Cloud, upgrade Spotlight Ent
 
 Otherwise, to resolve this alarm, disable uploads to Spotlight Cloud. 
 
+See [Confiure uploading to the Spotlight Cloud][enterprise_cfgds_spotlightcloud].
+
 {% include links.html %}

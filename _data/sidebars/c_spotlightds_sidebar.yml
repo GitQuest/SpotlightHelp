@@ -40,14 +40,6 @@ entries:
       url: /spotlightds_alarm_alarmevaluationfailure.html
       output: web, pdf
 
-    - title: Diagnostic Server - Spotlight Cloud Incompatibility
-      url: /spotlightds_alarm_cloudincompatibility.html
-      output: web, pdf
-
-    - title: Diagnostic Server - Spotlight Cloud Future Incompatibility
-      url: /spotlightds_alarm_cloudfutureincompatibility.html
-      output: web, pdf
-
     - title: Diagnostic Server - Collection Execution Failure
       url: /spotlightds_alarm_collectionexecutionfailure.html
       output: web, pdf
@@ -82,6 +74,14 @@ entries:
 
     - title: Diagnostic Server - Spotlight Cloud Data Transfer
       url: /spotlightds_alarm_spotlightclouddatatransfer.html
+      output: web, pdf
+
+    - title: Diagnostic Server - Spotlight Cloud Future Incompatibility
+      url: /spotlightds_alarm_cloudfutureincompatibility.html
+      output: web, pdf
+
+    - title: Diagnostic Server - Spotlight Cloud Incompatibility
+      url: /spotlightds_alarm_cloudincompatibility.html
       output: web, pdf
 
       subfolders:
