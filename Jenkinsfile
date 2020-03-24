@@ -1,4 +1,4 @@
-@Library("F1-PipelineLibraries") _
+@Library("f1-shared-library") _
 timestamps
 {
     nodeWithProperWorkspace('VS2017ForSoSSE131', 'SE')
