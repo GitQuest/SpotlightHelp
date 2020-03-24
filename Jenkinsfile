@@ -25,7 +25,7 @@ timestamps
 				
 				def uploadPattern = "OnlineHelp.zip"
 				def targetPath = "Spotlight-Enterprise-libs/SpotlightHelp/${env.BRANCH_NAME}/OnlineHelp.zip"
-				UploadToArtifactory(uploadPattern, targetPath)
+				artifactory.UploadToArtifactory(uploadPattern, targetPath)
             }
     }
 }
