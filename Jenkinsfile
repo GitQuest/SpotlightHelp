@@ -23,8 +23,8 @@ timestamps
 				bat """${zip} a ${CurrentDir}\\OnlineHelp\\OnlineHelp.zip ${CurrentDir}\\OnlineHelp\\_site"""
 				bat """${zip} a ${CurrentDir}\\OnlineHelp\\OnlineHelp.zip ${CurrentDir}\\OnlineHelp\\_siteBalloonHelp"""
 				
-				def pattern = "OnlineHelp.zip"
-				def target = "Spotlight-Enterprise-libs/SpotlightHelp/${env.BRANCH_NAME}/OnlineHelp.zip"
+				def uploadPattern = "OnlineHelp.zip"
+				def targetPath = "Spotlight-Enterprise-libs/SpotlightHelp/${env.BRANCH_NAME}/OnlineHelp.zip"
 				UploadToArtifactory(uploadPattern, targetPath)
             }
     }
