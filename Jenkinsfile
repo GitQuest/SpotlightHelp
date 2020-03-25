@@ -1,4 +1,4 @@
-@Library("f1-shared-library") _
+def sharedLib = library('f1-shared-library').com.lib
 timestamps
 {
     nodeWithProperWorkspace('VS2017ForSoSSE131', 'SE')
@@ -23,9 +23,10 @@ timestamps
 				bat """${zip} a ${CurrentDir}\\OnlineHelp\\OnlineHelp.zip ${CurrentDir}\\OnlineHelp\\_site"""
 				bat """${zip} a ${CurrentDir}\\OnlineHelp\\OnlineHelp.zip ${CurrentDir}\\OnlineHelp\\_siteBalloonHelp"""
 				
+				Jfrog = sharedLib.Jfrog.new(this);
+				def branchName = ${env.BRANCH_NAME};
 				def uploadPattern = "OnlineHelp.zip"
-				def targetPath = "Spotlight-Enterprise-libs/SpotlightHelp/${env.BRANCH_NAME}/OnlineHelp.zip"
-				artifactory.UploadToArtifactory(uploadPattern, targetPath)
+				Jfrog.uploadSpotlightHelp(branchName, uploadPattern)
             }
     }
 }
