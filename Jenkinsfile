@@ -24,7 +24,7 @@ timestamps
 				bat """${zip} a ${CurrentDir}\\OnlineHelp\\OnlineHelp.zip ${CurrentDir}\\OnlineHelp\\_siteBalloonHelp"""
 				
 				Jfrog = sharedLib.Jfrog.new(this);
-				def branchName = ${env.BRANCH_NAME};
+				def branchName = env.BRANCH_NAME;
 				def uploadPattern = "OnlineHelp.zip"
 				Jfrog.uploadSpotlightHelp(branchName, uploadPattern)
             }
