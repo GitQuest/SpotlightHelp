@@ -51,5 +51,18 @@ Spotlight Clients in the federation have access to all configuration templates i
 ### Spotlight license
 The Spotlight license applied to the Configuration server is applied to the federation. For more information, see the Configuration server on the  [Configure Operations][enterprise_backend_federation_cfgops] page.
 
+## SSR historical data process while making a federation
+
+### The historical data is in the SSR database currently in use.
+
+
+### The historical data is not in the SSR database currently in use
+
+
+
+
+
+
 
 {% include links.html %}
+
