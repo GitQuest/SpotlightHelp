@@ -54,15 +54,17 @@ The Spotlight license applied to the Configuration server is applied to the fede
 ## SSR historical data process while making a federation
 
 ### The historical data is in the SSR database currently in use.
+1. Open Diagnostic Server install directory, in Agent\bin, open the SQL script "SSR_Merge_Data_Check_Information.sql", please replace the [SSR_Database_Name] to your real SSR database name which you want to check the summarize information;
+2. Open the SQL script "SSR_Merge_Data_In_Same_Database.sql", uncomment the line 17,  please replace the [SSR_Database_Name] to your real SSR database name, and at line 28, please set the domain_id to your new currently used Diagnostic server's domain id;
+3. Make sure you understand the note in the script's header. Recommend to backup the database first. Then execute the script.
+4. Open the Spotlight Enterprise Client to check if the report show all the history data. 
 
 
 ### The historical data is not in the SSR database currently in use
-
-
-
-
-
-
+1. Open Diagnostic Server install directory, in Agent\bin, open the SQL script "SSR_Merge_Data_In_Different_Database.sql", use the destination SSR database name to replace the [SSRD], and use the source database name to replace all the [SSRA]. So we can tell the script to merged the old data in SSRA to the new currently used [SSRD].
+2. Go to line 530 in the script,  change the 'name1', 'name2', 'name3' to the real object name you want to transfer to new SSR database. If you want to transfer all, you can uncomment this line.
+3. Make sure you understand the note in the script's header. Recommend to backup the database first. Then execute the script.
+4. Open the Spotlight Enterprise Client to check if the report show all the history data. 
 
 {% include links.html %}
 
