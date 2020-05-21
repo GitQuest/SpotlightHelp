@@ -67,4 +67,3 @@ The Spotlight license applied to the Configuration server is applied to the fede
 4. Open the Spotlight Enterprise Client to check if the report show all the history data. 
 
 {% include links.html %}
-
