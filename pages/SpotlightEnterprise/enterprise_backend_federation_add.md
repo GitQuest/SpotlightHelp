@@ -59,7 +59,6 @@ The Spotlight license applied to the Configuration server is applied to the fede
 3. Make sure you understand the note in the script's header. Recommend to backup the database first. Then execute the script.
 4. Open the Spotlight Enterprise Client to check if the report show all the history data. 
 
-
 ### The historical data is not in the SSR database currently in use
 1. Open Diagnostic Server install directory, in Agent\bin, open the SQL script "SSR_Merge_Data_In_Different_Database.sql", use the destination SSR database name to replace the [SSRD], and use the source database name to replace all the [SSRA]. So we can tell the script to merged the old data in SSRA to the new currently used [SSRD].
 2. Go to line 530 in the script,  change the 'name1', 'name2', 'name3' to the real object name you want to transfer to new SSR database. If you want to transfer all, you can uncomment this line.
