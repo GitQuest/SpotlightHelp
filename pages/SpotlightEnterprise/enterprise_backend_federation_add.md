@@ -57,8 +57,8 @@ If you have created a Federation that monitors connections that were previously 
 
 ### Check the Diagnostic Server list and the data statistics information for each connection
 
-We should check how many Diagnostic Servers in the SSR database and the time period and amount of data collected per connection.
-Using the SSMS select the SSR database locate the stored procedure spotlight_merge_data_check_info and execute it to see this information.
+Use the following steps to check how many Diagnostic Servers are in the SSR database and the time period and amount of data collected per connection.
+Using SSMS select the SSR database, locate the stored procedure spotlight_merge_data_check_info and execute it to see this information.
 
 ### Historical data and the current data are in the same database
 
