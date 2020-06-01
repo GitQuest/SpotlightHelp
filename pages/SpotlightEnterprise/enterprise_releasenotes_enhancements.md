@@ -14,6 +14,6 @@ Enhancement | Issue ID
 ------------|---------
 Plan visualization and plan analysis have been enhanced to show more optimization suggestions. | SEMB-463
 DS will send a resolve event to PagerDuty when alarm is cleared automatically. | SEMB-432, SOSSE-8697
-Wait Events and Workload Analysis drilldowns have been enhanced to show procedure name instead. | SEMB-289, SOSSE-8805
+The Wait Events and Workload Analysis drilldowns have been enhanced to show the procedure name instead of the SQL text. | SEMB-289, SOSSE-8805
 
 {% include links.html %}
