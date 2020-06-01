@@ -62,9 +62,9 @@ Using SSMS select the SSR database, locate the stored procedure spotlight_merge_
 
 ### Historical data and the current data are in the same database
 
-Using SSMS expand the SSR database and locate the stored procedure spotlight_merge_data_in_same_ssr. This procedure should be used when you want to move data from an old domain to a currently used domain in the same SSR database. In the SSR the domain is equivalent to the Diagnostic Server host name. This procedure has a parameter called @To_Domain_id which is the id of the domain that you want to transfer the data to. Below is an example of how to use this procedure.
+Using SSMS expand the SSR database and locate the stored procedure spotlight_merge_data_in_same_ssr. This procedure should be used when you want to move data from an old domain to a currently used domain in the same SSR database. In the SSR the domain is equivalent to the Diagnostic Server hostname. This procedure has a parameter called @To_Domain_id which is the id of the domain that you want to transfer the data to. Below is an example of how to use this procedure.
 
-For example say there are three domain ids in your SSR. Domain id 1 is the historical Diagnostic Server which monitored 200 connections before federation. Then these 200 connections were split between two new Diagnostic Servers which have IDs of 2 and 3. Each new DS monitors 100 connections. The new domains will only contain data that was created after federation so you need to merge the data from domain 1 into the new domains 2 and 3 if you want to see the old data.
+For example, say there are three domain ids in your SSR. Domain id 1 is the historical Diagnostic Server which monitored 200 connections before Federation. Then these 200 connections were split between two new Diagnostic Servers which have IDs of 2 and 3. Each new DS monitors 100 connections. The new domains will only contain data that was created after federation so you need to merge the data from domain 1 into the new domains 2 and 3 if you want to see the old data.
 
 1. Execute the spotlight_merge_data_in_same_ssr procedure with the parameter @To_domain_id set to 2 which will merge the historical data from domain 1 to the new domain 2.
    exec spotlight_merge_data_in_same_ssr 2  
@@ -72,14 +72,14 @@ For example say there are three domain ids in your SSR. Domain id 1 is the histo
 2. Execute the spotlight_merge_data_in_same_ssr procedure with the parameter @To_domain_id set to 3 which will merge the historical data from domain 1 to the new domain 3.
    exec spotlight_merge_data_in_same_ssr 3  
 	
-After these two steps the historical data from domain 1 will have been merged to the currently used domains 2 and 3.
+After these two steps, the historical data from domain 1 will have been merged to the currently used domains 2 and 3.
 
 
 ### Historical data and the current data are in different database
 
-Using SSMS expand the SSR database and locate the stored spotlight_merge_data_in_diff_ssr. This procedure should be used when you want to move data from an old domain to a currently used domain in a different SSR database. In the SSR the domain is equivalent to the Diagnostic Server host name. This procedure has a parameter called @HistoricalSSRDatabaseName which is the name of the old SSR database that you want to transfer the data from. Below is an example of how to use this procedure.
+Using SSMS expand the SSR database and locate the stored spotlight_merge_data_in_diff_ssr. This procedure should be used when you want to move data from an old domain to a currently used domain in a different SSR database. In the SSR the domain is equivalent to the Diagnostic Server hostname. This procedure has a parameter called @HistoricalSSRDatabaseName which is the name of the old SSR database that you want to transfer the data from. Below is an example of how to use this procedure.
 
-For example say that you have two SSR databases - SSR_Old and SSR_New. Some of connections appear in both SSR_Old and SSR_New with the same connection name and some of the connections only exist in SSR_Old. Now you want to transfer the data from the SSR_Old to SSR_New.
+For example, say that you have two SSR databases - SSR_Old and SSR_New. Some of the connections appear in both SSR_Old and SSR_New with the same connection name and some of the connections only exist in SSR_Old. Now you want to transfer the data from the SSR_Old to SSR_New.
 
 If the SSR_Old and SSR_New databases are in the same instance then execute spotlight_merge_data_in_diff_ssr with the @HistoricalSSRDatabaseName parameter set to [SSR_Old].
 exec spotlight_merge_data_in_diff_ssr "[SSR_Old]"   --execute this line in SSR_New
@@ -87,6 +87,6 @@ exec spotlight_merge_data_in_diff_ssr "[SSR_Old]"   --execute this line in SSR_N
 If the SSR_Old database is in another instance with an IP address of 10.154.10.10 then execute spotlight_merge_data_in_diff_ssr with the @HistoricalSSRDatabaseName parameter set to [10.154.10.10].[SSR_Old].
 exec spotlight_merge_data_in_diff_ssr "[10.154.10.10].[SSR_Old]"  --execute this line in SSR_New
 
-Note: Both SSR databases involved in the merge must has the same collation settings.
+Note: Both SSR databases involved in the merge must have the same collation settings.
 
 {% include links.html %}
