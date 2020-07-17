@@ -16,4 +16,5 @@ Issue | ID
 ------|---
 Corrected a problem where the Spotlight Statistics Repository deletion script caused tempdb to fill up. | SEMB-452,SOSSE-8702
 Corrected a problem where a blocked collection caused other collections to be cancelled which resulted in missing data. | SEMB-422, SOSSE-8643
+Corrected a problem where switching between reports used stale data. | SEMB-543, SOSSE-8955
 {% include links.html %}
