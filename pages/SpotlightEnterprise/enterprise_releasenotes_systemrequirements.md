@@ -33,9 +33,7 @@ This space should exist on a local disk drive rather than a network drive.
 * Microsoft Windows Server 2012 R2 (64-bit)
 * Microsoft Windows Server 2012 (64-bit)
 * Microsoft Windows Server 2008 R2 (64-bit)
-* Microsoft Windows Server 2008 (64-bit)
 
-{% include note.html content="Microsoft Windows Server 2008 requires Microsoft Windows Powershell 3.0 or above." %}
 
 ### Screen resolution
 Minimum Resolution: 1280x1024
@@ -57,7 +55,7 @@ Minimum .NET 4.5.
 .NET is required for the Performance Health drilldowns and the Spotlight Report Viewer.
 
 #### Support for TLS 1.2
-In general every Windows version after and including Windows Server 2008 or Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
+In general every Windows version after and including Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
 
 As part of the support for TLS 1.2, ensure the ODBC Driver 13 for SQL Server is installed.
 
@@ -84,7 +82,6 @@ To find out the version of MDAC that you are currently running, you can download
 #### Microsoft Windows Powershell 3.0 or above
 Microsoft Windows Powershell 3.0 or above is required to [access Spotlight from the command line][enterprise_commandline_summary].
 
-{% include note.html content="Microsoft Windows Server 2008 requires Microsoft Windows Powershell 3.0 or above to install." %}
 
 ## Spotlight Diagnostic Server requirements
 
@@ -112,7 +109,6 @@ If the Diagnostic Server’s connection to the Spotlight Statistics Repository o
 * Microsoft Windows Server 2012 R2 (64-bit)
 * Microsoft Windows Server 2012 (64-bit)
 * Microsoft Windows Server 2008 R2 (64-bit)
-* Microsoft Windows Server 2008 (64-bit)
 
 {% include tip.html content="The Diagnostic Server is not supported on a cluster or High Availability Always On." %}
 
@@ -156,7 +152,7 @@ If Windows Firewall is set up to block traffic by default then in Windows Firewa
 A single Spotlight Diagnostic Server is designed to monitor a maximum of 100 SQL Servers, Analysis Services or Replication instances and 100 Windows servers. Exceeding this recommended limit on 32 bit environments may result in poor performance or product instability, due to the 1 Gb memory limit. On 64 bit environments theoretically more connections can be monitored as the 1 Gb limit no longer applies, however testing of this has been limited. In environments that exceed this number of connections, consider a deployment of federation of Spotlight Diagnostic Server.
 
 #### Support for TLS 1.2
-In general every Windows version after and including Windows Server 2008 or Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
+In general every Windows version after and including Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
 
 
 ## Monitoring
