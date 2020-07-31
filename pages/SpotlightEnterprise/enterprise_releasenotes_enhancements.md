@@ -15,5 +15,6 @@ Enhancement | Issue ID
 Plan visualization and plan analysis have been enhanced to show more optimization suggestions. | SEMB-463
 DS will send a resolve event to PagerDuty when alarm is cleared automatically. | SEMB-432, SOSSE-8697
 The Wait Events and Workload Analysis drilldowns have been enhanced to show the procedure name instead of the SQL text. | SEMB-289, SOSSE-8805
-
+The I/O stall alarm rule has been enhanced to reduce the alarm noise. | SEMB-561, SOSSE-8981
+The Recompiles alarm rule has been enhanced to reduce number of alarms. | SEMB-560, SOSSE-8980
 {% include links.html %}
