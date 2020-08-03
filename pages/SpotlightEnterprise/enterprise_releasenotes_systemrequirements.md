@@ -137,7 +137,6 @@ Required by Spotlight Cloud. Required to monitor your Spotlight connections from
 
 If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new inbound and outbound rules to enable the following URLs on TCP port 443:
 * https://api.spotlightessentials.com
-* https://audit.spotlightessentials.com
 * https://authzp.spotlightessentials.com
 * https://dsmetadata.spotlightessentials.com
 * https://mds-alarmingest-v4-spot-prod.spotlightcloud.io
@@ -146,7 +145,6 @@ If Windows Firewall is set up to block traffic by default then in Windows Firewa
 * https://versions.spotlightcloud.io/
 * https://spn.spotlightcloud.io
 * https://login.microsoftonline.com
-* https://spotlight.blob.core.windows.net
 
 #### Connection Limit
 A single Spotlight Diagnostic Server is designed to monitor a maximum of 100 SQL Servers, Analysis Services or Replication instances and 100 Windows servers. Exceeding this recommended limit on 32 bit environments may result in poor performance or product instability, due to the 1 Gb memory limit. On 64 bit environments theoretically more connections can be monitored as the 1 Gb limit no longer applies, however testing of this has been limited. In environments that exceed this number of connections, consider a deployment of federation of Spotlight Diagnostic Server.
