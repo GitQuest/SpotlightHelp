@@ -243,10 +243,11 @@ If Windows Firewall is set up to block traffic by default then in Windows Firewa
 * https://mds-alarmingest-v4-spot-prod.spotlightcloud.io
 * https://mds-egress-v4-spot-prod.spotlightcloud.io
 * https://mds-ingest-v4-spot-prod.spotlightcloud.io
-* https://versions.spotlightcloud.io/
+* https://versions.spotlightcloud.io
 * https://spn.spotlightcloud.io
 * https://login.microsoftonline.com
-* https://id.quest.com/
+* https://id.quest.com
+* https://app.spotlightcloud.io
 * https://um-v2.spotlightessentials.com
 
 ## Upgrade and compatibility
