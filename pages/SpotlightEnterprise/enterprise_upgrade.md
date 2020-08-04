@@ -42,7 +42,7 @@ To upgrade from an earlier version of Spotlight on SQL Server than 10.0, upgrade
 To upgrade from Spotlight on SQL Server 10.5.0, first upgrade to 10.5.2 and then upgrade to Spotlight Enterprise.
 
 ### Spotlight Enterprise 13.2 and Internet Access
-On upgrade to Spotlight Enterprise 13.2, If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new inbound and outbound rules to enable the following URLs on TCP port 443:
+On upgrade to Spotlight Enterprise 13.2, If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new outbound rules to enable the following URLs on TCP port 443:
 https://versions.spotlightcloud.io/
 
 ### Spotlight Enterprise 12.3 and SQL Server Error Log Alarms

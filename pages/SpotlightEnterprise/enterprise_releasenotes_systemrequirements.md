@@ -236,7 +236,7 @@ Cloud Connect is compatible with SoSSE versions 13.2 and higher. This is effecti
 #### Internet Access
 Required by Spotlight Cloud. Required to monitor your Spotlight connections from the Spotlight Cloud web site or a mobile device.
 
-If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new inbound and outbound rules to enable the following URLs on TCP port 443:
+If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new outbound rules to enable the following URLs on TCP port 443:
 * https://api.spotlightessentials.com
 * https://authzp.spotlightessentials.com
 * https://dsmetadata.spotlightessentials.com
