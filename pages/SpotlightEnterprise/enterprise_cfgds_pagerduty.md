@@ -15,7 +15,7 @@ Prior to following these instructions ensure you have your PagerDuty Integration
 
 The Spotlight Diagnostic Server requires Internet access in order to fulfill on [Configure \| Alarm Actions \| Alarm Action \| Send PagerDuty incident][enterprise_cfgmonitor_alarmaction].
 
-{% include note.html content="Spotlight is integrated with Pager Duty Event API V1" %}
+{% include note.html content="Spotlight is integrated with PagerDuty Event API V1" %}
 
 ## Open this screen from the Spotlight Client
 
