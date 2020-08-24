@@ -12,13 +12,11 @@ readonly: true
 
 Known Issue | Issue ID
 ------------|---------
-Alarms and PagerDuty - When an alarm is cleared automatically Spotlight does not send a resolve event to PagerDuty to change the incident from Triggered state to Resolved state. | DS-863
 Spotlight Clients installed on Windows 10 - Exception error may occur on deleting two connetions at the same time. | SOSSE-6556
 If the Spotlight Client looses connection to the Spotlight Diagnostic Server then after a period of days the Spotlight Client will develop a minor memory leak. <br><br>*Workaround:* Restart the Spotlight Client. | 5433
 The Spotlight Client can experience performance issues (opening the home page, acknowledging and snoozing alarms) when a large number of alarms are raised against the one connection. | 2651
 Manual refresh is required on some drilldowns. Right click the data in the grid and select **Restore Default Settings \| Restore**. The grid shows "Loading". Click Refresh to populate the grid. | 11333 <br><br> 11406
-Spotlight does not currently support PagerDuty API 2. Spotlight does support PagerDuty API V1. | SOSSE-6533
-Known issues using the online help top navigation pane from the following operating systems: Microsoft Windows Server 2008 R2 to 2016. *Workaround:* Configure the Spotlight Client to use offline help as per **Configure \| Spotlight \| Troubleshooting \| Choose Help location** or disable IE Enhanced Security Configuration from the Server Manager. Disabling IE Enhanced Security Configuration is not the preferred option. | SOSSE-6580
+Known issues using the online help top navigation pane from the following operating systems: Microsoft Windows Server 2008 R2 to 2019. *Workaround:* Configure the Spotlight Client to use offline help as per **Configure \| Spotlight \| Troubleshooting \| Choose Help location** or disable IE Enhanced Security Configuration from the Server Manager. Disabling IE Enhanced Security Configuration is not the preferred option. | SOSSE-6580
 Known issues using Spotlight Help when Internet Explorer 8 or below is installed on the Spotlight Client host computer. *Workaround:* Upgrade Internet Explorer on the Spotlight Client host computer. | SOSSE-6581
 
 

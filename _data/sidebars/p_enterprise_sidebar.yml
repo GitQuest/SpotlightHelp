@@ -35,18 +35,10 @@ entries:
           url: /enterprise_releasenotes.html
           output: web, pdf
 
-        - title: New features
-          url: /enterprise_releasenotes_new.html
-          output: web, pdf
-
         - title: Enhancements
           url: /enterprise_releasenotes_enhancements.html
           output: web, pdf
  
-        - title: Deprecated Features
-          url: /enterprise_releasenotes_deprecated.html
-          output: web, pdf
-          
         - title: Resolved issues
           url: /enterprise_releasenotes_resolvedissues.html
           output: web, pdf
