@@ -17,4 +17,5 @@ DS will send a resolve event to PagerDuty when alarm is cleared automatically. |
 The Wait Events and Workload Analysis drilldowns have been enhanced to show the procedure name instead of the SQL text. | SEMB-289, SOSSE-8805
 The I/O stall alarm rule has been enhanced to reduce the alarm noise. | SEMB-561, SOSSE-8981
 The Recompiles alarm rule has been enhanced to reduce number of alarms. | SEMB-560, SOSSE-8980
+The default Extended Events minimum duration to reduce issues. | SEMB-585 , SOSSE-9021
 {% include links.html %}
