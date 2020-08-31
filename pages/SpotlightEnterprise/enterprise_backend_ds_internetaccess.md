@@ -47,7 +47,6 @@ Spotlight Cloud requires incoming and outgoing HTTPS connections to the followin
 URL | Web browser lookup
 ----|-------------------
 https://www.spotlightessentials.com | Successful display of the Spotlight Cloud web site confirms HTTPS port 443 is open.
-https://api.spotlightessentials.com | Successful display of the text “Welcome to Spotlight Web API!” confirms access for uploading.
 
 
 {% include links.html %}
