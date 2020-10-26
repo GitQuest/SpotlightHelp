@@ -19,10 +19,10 @@ Command parameters
 Parameter | Use
 ----------|----
 -ConnectionName | The SQL Instance Technology name, case insensitive.
--StartDate | the start time of the data.
--EndDate | the end time of the data.
+-StartDate | Used to select the time range.
+-EndDate | Used to select the time range.
 -Resource | "CPU", "Durations", "Logic Reads", "Physical Reads", "Writes".
--Path | the output file saved path, the default path is the current run command path.
+-Path | The output file saved path.
 -isSQL2008 | If the SQL version is 2008 or 2008R2, this parameter is required.
 -DS | The Diagnostic Server address.
 
