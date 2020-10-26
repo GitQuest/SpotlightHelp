@@ -21,7 +21,7 @@ Parameter | Use
 -ConnectionName | The SQL Instance Technology name, case insensitive.
 -StartDate | the start time of the data.
 -EndDate | the end time of the data.
--Resource | For SQL 2008: ("CPU", "Durations", "Reads", "Writes").<br>For SQL 2012 and above: ("CPU", "Durations", "Logic Reads", "Physical Reads", "Writes")
+-Resource | "CPU", "Durations", "Logic Reads", "Physical Reads", "Writes".
 -Path | the output file saved path, the default path is the current run command path.
 -isSQL2008 | If the SQL version is 2008 or 2008R2, this parameter is required.
 -DS | The Diagnostic Server address.
