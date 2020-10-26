@@ -728,6 +728,10 @@ entries:
           url: /enterprise_commandline_plannedoutage.html
           output: web, pdf
 
+        - title: Get Workload Analysis
+          url: /enterprise_commandline_getworkloadanalysis.html
+          output: web, pdf
+
   - title: Backend deployment
     output: web, pdf
     folderitems:
