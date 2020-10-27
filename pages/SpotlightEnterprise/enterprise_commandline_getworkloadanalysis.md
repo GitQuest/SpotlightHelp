@@ -8,11 +8,11 @@ folder: SpotlightEnterprise
 
 
 
-## Get Workload analysis commands
+## Get Workload Analysis commands
 
-### Get-Workloadanalysis
+### Get-WorkloadAnalysis
 
-Export the workload Analysis statement to a CVS file.
+Export the Workload Analysis data to a CVS file.
 
 Command parameters
 
@@ -29,19 +29,19 @@ Parameter | Use
 Export the CSV file to the current path
 
 ```
-Get-Workloadanalysis -connectionname W2K16-SQL16_sqlserver -startdate "2020-10-23 5:30:00" -enddate "2020-10-23 6:30:00" -Resource "CPU"
+Get-WorkloadAnalysis -connectionname W2K16-SQL16_sqlserver -startdate "2020-10-23 5:30:00" -enddate "2020-10-23 6:30:00" -Resource "CPU"
 ```
 
 Export the CSV file to a specific path
 
 ```
-get-workloadanalysis -connectionname W2K16-SQL16_sqlserver -startdate "2020-10-23 5:30:00" -enddate "2020-10-23 6:30:00" -Resource "CPU" -Path "C:\sosse"
+Get-WorkloadAnalysis -connectionname W2K16-SQL16_sqlserver -startdate "2020-10-23 5:30:00" -enddate "2020-10-23 6:30:00" -Resource "CPU" -Path "C:\sosse"
 ```
 
 The instance is SQL Server 2008 or 2008R2
 
 ```
-get-workloadanalysis -connectionname SQL2008R2SP3_sqlserver -startdate "2020-10-16 2:30:00" -enddate "2020-10-16 6:30:00" -Resource "Reads" -isSQL2008
+Get-WorkloadAnalysis -connectionname SQL2008R2SP3_sqlserver -startdate "2020-10-16 2:30:00" -enddate "2020-10-16 6:30:00" -Resource "Reads" -isSQL2008
 ```
 
 
