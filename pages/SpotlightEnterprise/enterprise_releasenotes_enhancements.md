@@ -18,5 +18,7 @@ The Wait Events and Workload Analysis drilldowns have been enhanced to show the 
 The I/O stall alarm rule has been enhanced to reduce the alarm noise. | SEMB-561, SOSSE-8981
 The Recompiles alarm rule has been enhanced to reduce number of alarms. | SEMB-560, SOSSE-8980
 Updated the default Extended Events minimum duration from 0 to 200. | SEMB-585 , SOSSE-9021
-As a DBA I want to export data from the Workload Analysis collection using PowerShell. | SEMB-68
+Export data from the Workload Analysis collection using PowerShell. | SEMB-68
+Give a warning when SNMP is configured to use an insecure connection. | SEMB-540
+Give a message to show if the connection to the SMTP server is secure or not. | SEMB-628
 {% include links.html %}
