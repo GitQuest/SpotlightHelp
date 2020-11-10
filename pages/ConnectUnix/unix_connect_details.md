@@ -32,9 +32,10 @@ Enter the password to login to the Unix/Linux machine.
 ### Port Number
 Enter the port number for SSH (secure shell) connection to the Unix/Linux machine. The default value is 22.
 
-
 ## Test the connection
 On entering / modifying connection details in the Spotlight Client, click **Test** to test the connection.
 
+## Use a high security connection protocol
+When selected Spotlight will check that the connection is using a secure protocol and raise a Connection Failure alarm if is not.
 
 {% include links.html %}

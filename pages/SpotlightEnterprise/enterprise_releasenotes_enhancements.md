@@ -21,4 +21,5 @@ Updated the default Extended Events minimum duration from 0 to 200. | SEMB-585 ,
 Export data from the Workload Analysis collection using PowerShell. | SEMB-68
 Give a warning when SNMP is configured to use an insecure connection. | SEMB-540
 Give a message to show if the connection to the SMTP server is secure or not. | SEMB-628
+Raise an alarm when the Linux/Unix connection is not secure. | SEMB-629
 {% include links.html %}
