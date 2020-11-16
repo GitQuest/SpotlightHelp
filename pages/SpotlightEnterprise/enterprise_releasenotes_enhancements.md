@@ -12,6 +12,7 @@ readonly: true
 
 Enhancement | Issue ID
 ------------|---------
+Spotlight on SQL Server Enterprise is now FIPS 140-2 compliant. | SEMB-494
 Plan visualization and plan analysis have been enhanced to show more optimization suggestions. | SEMB-463
 Spotlight will send a resolve event to PagerDuty when an alarm is cleared. | SEMB-432, SOSSE-8697
 The Wait Events and Workload Analysis drilldowns have been enhanced to show the procedure name instead of the SQL text. | SEMB-289, SOSSE-8805
