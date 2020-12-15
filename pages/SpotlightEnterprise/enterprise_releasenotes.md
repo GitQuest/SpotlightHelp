@@ -1,5 +1,5 @@
 ---
-title: Spotlight Enterprise 13.3 Release Notes
+title: Spotlight Enterprise 13.4 Release Notes
 keywords: release notes
 summary: "These release notes provide information about the Spotlight Enterprise release."
 sidebar: p_enterprise_sidebar
