@@ -10,7 +10,7 @@ folder: SpotlightEnterprise
 ---
 
 
-The SQL Server \| Databases drilldown \| Fragmented Indexes page is used to assess the fragmentation of index files on the SQL Server. Data for the Fragmented indexes page is collected once a day according to the following criteria and stored in the Playback Database.
+The SQL Server \| Databases drilldown \| Fragmented Indexes page is used to assess the fragmentation of index partitions on the SQL Server. Data for the Fragmented indexes page is collected once a day according to the following criteria and stored in the Playback Database.
 
 ## Configure Defragmentation Check from the Spotlight Client
 

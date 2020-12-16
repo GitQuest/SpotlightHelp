@@ -11,7 +11,7 @@ folder: ConnectHyperv
 
 
 
-The average queue time should remain under 60,000ns. This alarm is raised when the average queue time exceeds 60ms. A high severity alarm is raised when the average queue time exceeds 100ms.
+The average queue time should remain under 60,000ns. This alarm is raised when the average queue time exceeds 60 microseconds. A high severity alarm is raised when the average queue time exceeds 100 microseconds.
 
 When the alarm is raised there is CPU starvation.
 

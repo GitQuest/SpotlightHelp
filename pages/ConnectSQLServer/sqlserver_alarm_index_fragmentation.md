@@ -2,7 +2,7 @@
 title: Index Fragmentation alarm
 tags: [sqlserver_alarms]
 last_updated: July 29, 2016
-summary: "The Index Fragmentation alarm is raised when the largest Index file on the SQL Server is more than 5% fragmented. It is a good idea to defragment large index files that are more than 5% fragmented."
+summary: "The Index Fragmentation alarm is raised when the largest index partition on the SQL Server is more than 5% fragmented. It is a good idea to defragment large index partitions that are more than 5% fragmented."
 sidebar: c_sqlserver_sidebar
 permalink: sqlserver_alarm_index_fragmentation.html
 id: Index_Fragmentation.Alarm
@@ -10,7 +10,7 @@ folder: ConnectSQLServer
 ---
 
 
-{% include note.html content="Spotlight only checks large index files, that is Index files that have exceeded the **Maximum Size** criteria (default 10MB). The Maximum Size criteria can be customized using the Connection Tags feature; refer to the **SQL Server \| Databases drilldown** documentation for more information." %}
+{% include note.html content="Spotlight only checks large index partitions, that is index partitions that have exceeded the **Maximum Size** criteria (default 10MB). The Maximum Size criteria can be customized using the Connection Tags feature; refer to the **SQL Server \| Databases drilldown** documentation for more information." %}
 
 When the alarm is raised:
 
