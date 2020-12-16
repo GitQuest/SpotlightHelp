@@ -312,7 +312,7 @@ Requirements
 
 
 ### Fragmented Indexes page
-Use the Fragmented Indexes grid to assess the fragmentation of index files on the SQL Server.
+Use the Fragmented Indexes grid to assess the fragmentation of index partitions on the SQL Server.
 
 #### Data collection
 The data for this grid is collected once a day and stored in the Playback Database.

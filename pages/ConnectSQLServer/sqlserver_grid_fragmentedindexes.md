@@ -1,7 +1,7 @@
 ---
 title: Fragmented Indexes grid
 last_updated: September 13, 2017
-summary: "Use the Fragmented Indexes grid to assess the fragmentation of index files on the SQL Server."
+summary: "Use the Fragmented Indexes grid to assess the fragmentation of index partitions on the SQL Server."
 sidebar: c_sqlserver_sidebar
 permalink: sqlserver_grid_fragmentedindexes.html
 id: FragmentedIndexesGrid

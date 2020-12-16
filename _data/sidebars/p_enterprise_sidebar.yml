@@ -38,7 +38,7 @@ entries:
         - title: Enhancements
           url: /enterprise_releasenotes_enhancements.html
           output: web, pdf
- 
+
         - title: Resolved issues
           url: /enterprise_releasenotes_resolvedissues.html
           output: web, pdf
@@ -379,7 +379,7 @@ entries:
     - title: Push Notifications
       url: /enterprise_alarm_notifications.html
       output: web, pdf
-      
+
     - title: Relationship between alarms and schedule
       url: /RulesProcedureIntervals.html
       output: web, pdf
@@ -399,6 +399,10 @@ entries:
 
         - title: Configure Connections
           url: /enterprise_cfgmonitor_connect.html
+          output: web, pdf
+
+        - title: Delete Connections
+          url: /enterprise_cfgmonitor_connect_delete.html
           output: web, pdf
 
         - title: Connection Tags
@@ -703,7 +707,7 @@ entries:
         - title: Troubleshooting
           url: /enterprise_interface_scom_troubleshoot.html
           output: web, pdf
-          
+
       - title: Windows Powershell / Command line access
         output: web
         subfolderitems:
