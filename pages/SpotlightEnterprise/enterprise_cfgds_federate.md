@@ -57,19 +57,15 @@ Add a Spotlight Diagnostic Server to the federation. The Spotlight Diagnostic Se
 Note:
 
 * A Spotlight Diagnostic Server can connect to one federation at a time. Remove a Spotlight Diagnostic Server from one federation before adding it to a different federation.
-
-* The Spotlight Diagnostic Servers in the federation cannot be monitoring the same connections. Where duplicate connections exist, federation cannot proceed. Spotlight will prompt you to delete duplicate connections.
-
+* The Spotlight Diagnostic Servers in a federation cannot monitor the same connections. Federation cannot proceed where duplicate connections exist. Spotlight will prompt you to delete duplicate connections.
+* Windows connections that have the same VMware host connection can only be monitored by one Spotlight Diagnostic Server in a federation because the VMware host connection
+can only defined in one Spotlight Diagnostic Server and connections in one Spotlight Diagnostic Server cannot use a host connection
+from another Spotlight Diagnostic Server. A workaround for this restriction is to create duplicate VMware host connections in different Diagnostic Servers by using an IP address or fully qualified host name.        
 * Each Spotlight Diagnostic Server in the federation must be running the same Spotlight version. Federation is supported for Spotlight Enterprise (Spotlight on SQL Server) versions 11.6 and above.
-
-* Each Spotlight Diagnostic Server in the federation authenticates with one selected Spotlight Diagnostic Server in the federation (the Configuration server). Each Spotlight Diagnostic Server authenticates with the Configuration server using Windows authentication over TCP port 40403. The Windows account that each Spotlight Diagnostic Server is running under must be valid in the domain of the Configuration server.
-
-* Spotlight Diagnostic Server running under the built in Windows accounts (local system or network service) cannot be federated.
-
+* Each Spotlight Diagnostic Server in the federation authenticates with one selected Spotlight Diagnostic Server in the federation (the Configuration server documented on the [Configure Operations][enterprise_backend_federation_cfgops] page). Each Spotlight Diagnostic Server authenticates with the Configuration server using Windows authentication over TCP port 40403. The Windows account that each Spotlight Diagnostic Server is running under must be valid in the domain of the Configuration server. Spotlight Diagnostic Server running under the built in Windows accounts (local system or network service) cannot be federated.
 * All Spotlight Clients in the federation retrieve monitoring information directly from the Spotlight Diagnostic Server. TCP port 3843 must be open for incoming connections from all Spotlight Diagnostic Server in the federation.
-
-* We suggest that a VPN is implemented with a federated system for increased security.
-
+* We recommend implementing a VPN with a federated system for increased security.
+* Connections that have been migrated from one Spotlight Diagnostic Server to another within a federation do not have their Playback and Spotlight Statistics Repository data preserved automatically. If you want to preserve that data see [Reorganizing SSR historical data after creating a federation](enterprise_backend_federation_add.html#reorganizingssr) .
 
 ### On adding a Spotlight Diagnostic Server to the federation
 

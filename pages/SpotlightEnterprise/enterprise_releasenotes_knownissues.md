@@ -12,13 +12,11 @@ readonly: true
 
 Known Issue | Issue ID
 ------------|---------
-Alarms and PagerDuty - When an alarm is cleared automatically Spotlight does not send a resolve event to PagerDuty to change the incident from Triggered state to Resolved state. | DS-863
 Spotlight Clients installed on Windows 10 - Exception error may occur on deleting two connetions at the same time. | SOSSE-6556
 If the Spotlight Client looses connection to the Spotlight Diagnostic Server then after a period of days the Spotlight Client will develop a minor memory leak. <br><br>*Workaround:* Restart the Spotlight Client. | 5433
 The Spotlight Client can experience performance issues (opening the home page, acknowledging and snoozing alarms) when a large number of alarms are raised against the one connection. | 2651
 Manual refresh is required on some drilldowns. Right click the data in the grid and select **Restore Default Settings \| Restore**. The grid shows "Loading". Click Refresh to populate the grid. | 11333 <br><br> 11406
-Spotlight does not currently support PagerDuty API 2. Spotlight does support PagerDuty API V1. | SOSSE-6533
-Known issues using the online help top navigation pane from the following operating systems: Microsoft Windows Server 2008 to 2016. *Workaround:* Configure the Spotlight Client to use offline help as per **Configure \| Spotlight \| Troubleshooting \| Choose Help location** or disable IE Enhanced Security Configuration from the Server Manager. Disabling IE Enhanced Security Configuration is not the preferred option. | SOSSE-6580
+Known issues using the online help top navigation pane from the following operating systems: Microsoft Windows Server 2008 R2 to 2019. *Workaround:* Configure the Spotlight Client to use offline help as per **Configure \| Spotlight \| Troubleshooting \| Choose Help location** or disable IE Enhanced Security Configuration from the Server Manager. Disabling IE Enhanced Security Configuration is not the preferred option. | SOSSE-6580
 Known issues using Spotlight Help when Internet Explorer 8 or below is installed on the Spotlight Client host computer. *Workaround:* Upgrade Internet Explorer on the Spotlight Client host computer. | SOSSE-6581
 
 
@@ -29,7 +27,6 @@ Known Issue | Issue ID
 On upgrade to Spotlight Enterprise 12.1, there is a significant difference in the way data is aggregated for the SQL Server \| Workload Analysis and Wait Events drilldowns. When the selected time range includes data collected prior to the upgrade, that data may not display properly. As a workaround, adjust the time range to include only post upgrade data. | DS-824
 **Installing other Spotlights.** Do not install other Spotlights into the Spotlight Enterprise folder. You will be unable to run Spotlight Enterprise if you do this. When installing other Spotlights you must install them into a different folder. | N/A
 **Remote installation.** Remote installation of Spotlight Enterprise fails if the user has both a domain account and a local account with the same user name. | N/A
-Installing the Spotlight Client on Windows Server 2008 - **Installation Error - The path is not of a legal form.**. To resolve this error, install PowerShell 3.0 or above on the Windows Server. | SOSSE-6048
 
 
 ## known issues with the Spotlight Diagnostic Server
@@ -67,7 +64,6 @@ Known Issue | Issue ID
 
 Known Issue | Issue ID
 ------------|---------
-**Planned Outages** - Where the Spotlight Client is installed on a Windows 2008 Server VM - The Planned Outage dialog disappears on Configure \| Planned Outage \| Add. <br><br> *Workaround:* Apply patch to .NET 4 - Software Update KB2468871v2 <br><br> *See also own Known issues monitoring SQL Server connections 3606.* | 3606
 **Spotlight Alarm Actions** does not have an action to kill a block process. <br><br> *Workaround:* Write a SQL Query to return the SPID and kill the process; put the SQL into the Execute a SQL Script action. | 2669
 **Unable to send email** - This is a known issue under the following circumstances <br><br> Symantec Endpoint Protection is installed on the Spotlight Diagnostic Server and <br> The Spotlight Diagnostic Server is installed on a 64 bit machine and <br> The Spotlight Diagnostic Server installation is 64-bit. <br><br> *Workaround:* "disable the Internet Email Auto-Protect option" in Symantec Endpoint Protection. See also: <br> http://www.symantec.com/business/support/index?page=content&id=TECH95093 and <br> http://www.symantec.com/connect/forums/sep-121-internet-email-auto-protect-and-ccnet-mail-issues | 2266
 **Spotlight Cloud** - On the Configure \| Spotlight Cloud page, the organization name or the text "My Organization" may be displayed instead of the email address for customers who signed in to Spotlight Cloud using Spotlight Enterprise versions earlier than 12.2. | ENT-217

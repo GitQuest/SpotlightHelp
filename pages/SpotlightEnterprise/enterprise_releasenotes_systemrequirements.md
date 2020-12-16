@@ -33,9 +33,7 @@ This space should exist on a local disk drive rather than a network drive.
 * Microsoft Windows Server 2012 R2 (64-bit)
 * Microsoft Windows Server 2012 (64-bit)
 * Microsoft Windows Server 2008 R2 (64-bit)
-* Microsoft Windows Server 2008 (64-bit)
 
-{% include note.html content="Microsoft Windows Server 2008 requires Microsoft Windows Powershell 3.0 or above." %}
 
 ### Screen resolution
 Minimum Resolution: 1280x1024
@@ -57,19 +55,9 @@ Minimum .NET 4.5.
 .NET is required for the Performance Health drilldowns and the Spotlight Report Viewer.
 
 #### Support for TLS 1.2
-In general every Windows version after and including Windows Server 2008 or Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
+In general every Windows version after and including Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
 
 As part of the support for TLS 1.2, ensure the ODBC Driver 13 for SQL Server is installed.
-
-#### Internet Access
-Required by Spotlight Cloud. Required to monitor your Spotlight connections from the Spotlight Cloud web site or a mobile device.
-
-If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new inbound and outbound rules to enable the following URLs on TCP port 443:
-* https://api.spotlightessentials.com
-* https://authzp.spotlightessentials.com
-* https://dsmetadata.spotlightessentials.com
-* https://id.quest.com/
-* https://um-v2.spotlightessentials.com
 
 #### Microsoft Internet Explorer® 6.0 or later.
 
@@ -84,7 +72,6 @@ To find out the version of MDAC that you are currently running, you can download
 #### Microsoft Windows Powershell 3.0 or above
 Microsoft Windows Powershell 3.0 or above is required to [access Spotlight from the command line][enterprise_commandline_summary].
 
-{% include note.html content="Microsoft Windows Server 2008 requires Microsoft Windows Powershell 3.0 or above to install." %}
 
 ## Spotlight Diagnostic Server requirements
 
@@ -112,7 +99,6 @@ If the Diagnostic Server’s connection to the Spotlight Statistics Repository o
 * Microsoft Windows Server 2012 R2 (64-bit)
 * Microsoft Windows Server 2012 (64-bit)
 * Microsoft Windows Server 2008 R2 (64-bit)
-* Microsoft Windows Server 2008 (64-bit)
 
 {% include tip.html content="The Diagnostic Server is not supported on a cluster or High Availability Always On." %}
 
@@ -136,27 +122,11 @@ Required to monitor an Analysis Services server, a SQL Server Replication enviro
 
 The SQL Server Management Tools are available from any SQL Server 2005, SQL Server 2008, SQL Server 2012, SQL Server 2014 or SQL Server 2016 edition except SQL Server Express and SQL Server Compact. The version required corresponds to the latest version of SQL Server that you are monitoring.
 
-#### Internet Access
-Required by Spotlight Cloud. Required to monitor your Spotlight connections from the Spotlight Cloud web site or a mobile device.
-
-If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new inbound and outbound rules to enable the following URLs on TCP port 443:
-* https://api.spotlightessentials.com
-* https://audit.spotlightessentials.com
-* https://authzp.spotlightessentials.com
-* https://dsmetadata.spotlightessentials.com
-* https://mds-alarmingest-v4-spot-prod.spotlightcloud.io
-* https://mds-egress-v4-spot-prod.spotlightcloud.io
-* https://mds-ingest-v4-spot-prod.spotlightcloud.io
-* https://versions.spotlightcloud.io/
-* https://spn.spotlightcloud.io
-* https://login.microsoftonline.com
-* https://spotlight.blob.core.windows.net
-
 #### Connection Limit
 A single Spotlight Diagnostic Server is designed to monitor a maximum of 100 SQL Servers, Analysis Services or Replication instances and 100 Windows servers. Exceeding this recommended limit on 32 bit environments may result in poor performance or product instability, due to the 1 Gb memory limit. On 64 bit environments theoretically more connections can be monitored as the 1 Gb limit no longer applies, however testing of this has been limited. In environments that exceed this number of connections, consider a deployment of federation of Spotlight Diagnostic Server.
 
 #### Support for TLS 1.2
-In general every Windows version after and including Windows Server 2008 or Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
+In general every Windows version after and including Windows 7 include TLS 1.2 support by default. For older versions, consult the Microsoft table  [https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server](https://support.microsoft.com/en-us/help/3135244/tls-1.2-support-for-microsoft-sql-server).
 
 
 ## Monitoring
@@ -252,7 +222,6 @@ The Spotlight Statistics Repository can be installed on:
 {% include tip.html content="The Spotlight Statistics Repository can be hosted on a Windows or Linux operating system." %}
 
 
-
 ### Other Requirements
 The SQL Browser service must be running on the machine where the Spotlight Statistics Repository is installed. Alternatively you can use the host and port number of the (named) SQL Server instance you want to connect to, when creating a connection and connecting to the Spotlight Statistics Repository.
 
@@ -263,6 +232,22 @@ It is highly recommended that regular maintenance is performed on the Spotlight 
 
 ## Spotlight Cloud
 Cloud Connect is compatible with SoSSE versions 13.2 and higher. This is effective from the 1st of June 2020.
+
+#### Internet Access
+Required by Spotlight Cloud. Required to monitor your Spotlight connections from the Spotlight Cloud web site or a mobile device.
+
+If Windows Firewall is set up to block traffic by default then in Windows Firewall | Advanced Settings add new outbound rules to enable the following URLs on TCP port 443:
+* https://authzp.spotlightessentials.com
+* https://dsmetadata.spotlightessentials.com
+* https://mds-alarmingest-v4-spot-prod.spotlightcloud.io
+* https://mds-egress-v4-spot-prod.spotlightcloud.io
+* https://mds-ingest-v4-spot-prod.spotlightcloud.io
+* https://versions.spotlightcloud.io
+* https://spn.spotlightcloud.io
+* https://login.microsoftonline.com
+* https://id.quest.com
+* https://app.spotlightcloud.io
+* https://um-v2.spotlightessentials.com
 
 ## Upgrade and compatibility
 Use the Spotlight installer to upgrade from Spotlight on SQL Server version 10.0 or later. To upgrade from an earlier version of Spotlight than 10.0, upgrade to at least version 10.0 before upgrading to 11.7. To upgrade from 10.5.0, first upgrade to 10.5.2 and then upgrade to 12.1.

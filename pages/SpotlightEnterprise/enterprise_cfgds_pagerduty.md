@@ -11,9 +11,11 @@ folder: SpotlightEnterprise
 
 ## PagerDuty and Spotlight
 
-Prior to following these instructions ensure you have your PagerDuty Integration Key. The instructions in the Spotlight Enterprise Integration Guide on the PagerDuty web site provide you with the necessary steps: [www.pagerduty.com/docs](https://www.pagerduty.com/docs). PagerDuty is a third party product ([www.pagerduty.com](https://www.pagerduty.com/)).
+Prior to following these instructions ensure you have your PagerDuty Integration Key. The instructions in the Spotlight Enterprise Integration Guide on the PagerDuty web site provide you with the necessary steps: [https://www.pagerduty.com/docs/guides/quest-spotlight-enterprise-integration-guide/](https://www.pagerduty.com/docs/guides/quest-spotlight-enterprise-integration-guide/). PagerDuty is a third party product ([www.pagerduty.com](https://www.pagerduty.com/)).
 
 The Spotlight Diagnostic Server requires Internet access in order to fulfill on [Configure \| Alarm Actions \| Alarm Action \| Send PagerDuty incident][enterprise_cfgmonitor_alarmaction].
+
+{% include note.html content="Spotlight is integrated with PagerDuty Event API V1" %}
 
 ## Open this screen from the Spotlight Client
 

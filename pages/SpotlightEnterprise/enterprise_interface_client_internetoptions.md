@@ -14,7 +14,6 @@ On the computer hosting the Spotlight Client:
 2. Select the **Advanced** tab.
 3. Verify **Use TLS 1.2** is selected.
 
-{% include note.html content="Windows Server 2008 only; Verify **Use TLS 1.0** is selected." %}
 
 {% include imageClient.html file="pane_windows_internetproperties_ssltls.png" alt="Internet Options" %}
 

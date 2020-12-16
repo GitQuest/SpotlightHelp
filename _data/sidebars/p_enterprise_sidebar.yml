@@ -1,7 +1,7 @@
 entries:
 - title: sidebar
   product: Spotlight Enterprise
-  version: 13.2.1
+  version: 13.3
 
   folders:
 
@@ -35,12 +35,8 @@ entries:
           url: /enterprise_releasenotes.html
           output: web, pdf
 
-        - title: New features
-          url: /enterprise_releasenotes_new.html
-          output: web, pdf
-
-        - title: Deprecated Features
-          url: /enterprise_releasenotes_deprecated.html
+        - title: Enhancements
+          url: /enterprise_releasenotes_enhancements.html
           output: web, pdf
 
         - title: Resolved issues
@@ -734,6 +730,10 @@ entries:
 
         - title: Schedule planned outages
           url: /enterprise_commandline_plannedoutage.html
+          output: web, pdf
+
+        - title: Get Workload Analysis data
+          url: /enterprise_commandline_getworkloadanalysis.html
           output: web, pdf
 
   - title: Backend deployment
